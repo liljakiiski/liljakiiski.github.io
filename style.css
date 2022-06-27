@@ -3,6 +3,8 @@ body {
 	background: rgb(0, 95, 150);
 }
 
+/* Main Section */
+
 .main  {
 	font-size: larger;
 	margin-left: 20px;
@@ -18,8 +20,10 @@ body {
 }
 
 .main img {
-	width: 15%;
+	height: 37vh;
 }
+
+/* Menu Section */
 
 .menu {
 	background: rgb(0, 47, 74);
@@ -44,4 +48,3 @@ body {
   	background-color: rgb(3, 161, 103);
   	color: white;
 }
-
