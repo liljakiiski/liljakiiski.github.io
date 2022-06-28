@@ -3,7 +3,7 @@ body {
 	background: rgb(0, 95, 150);
 }
 
-/* Main Section */
+/* Main */
 
 .main  {
 	font-size: larger;
@@ -23,14 +23,14 @@ body {
 	height: 37vh;
 }
 
-/* Menu Section */
+/* Navbar */
 
-.menu {
+.navbar {
 	background: rgb(0, 47, 74);
 	overflow: hidden;
 }
 
-.menu a {
+.navbar a {
   	float: left;
   	color: rgb(255, 255, 255);
   	text-align: center;
@@ -39,7 +39,7 @@ body {
 	font-size: 17px;
 }
 
-.menu a:hover {
+.navbar a:hover {
 	background-color: rgb(3, 161, 103);
 	color: white;
 }
