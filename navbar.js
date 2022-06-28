@@ -1,4 +1,4 @@
-fetch('navbar.html')
+fetch('https://liljakiiski.github.io/navbar.html') //Change to navbar.html once finished!
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#navbar");
