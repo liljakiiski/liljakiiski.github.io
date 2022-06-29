@@ -7,6 +7,10 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	vertical-align: baseline;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	padding: 5px 15px;
+}
+
 /* Body */
 body {
 	background: rgb(0, 95, 150);
@@ -18,12 +22,12 @@ body {
 	color: rgb(255, 255, 255);	
 }
 
-.main h1, h2, h3, h4, h5, h6 {
-	padding: 5px 15px;
-}
-
 .main h1 {
 	font-size: 50px;
+}
+
+.main h2 {
+	font-size: 40px;
 }
 
 .main h3 {
@@ -44,6 +48,28 @@ body {
 
 .main img {
 	height: 37vh;
+}
+
+.contact-top h2 {
+	padding: 30px;
+	text-align: center;
+}
+
+/* Contact */
+.contact {
+	width: 50vw;
+	margin: 20px auto 20px auto;
+	padding: 20px;
+	border: 3px solid rgb(255, 255, 255);
+	border-radius: 10px;
+	display: block;
+
+}
+
+.contact h2, .contact h3 {
+	font-size: 30px;
+	text-align: center;
+	overflow-wrap: break-word;
 }
 
 /* Navbar */
