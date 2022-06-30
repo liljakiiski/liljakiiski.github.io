@@ -1,3 +1,4 @@
+
 /* Reset */
 html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	margin: 0;
@@ -9,6 +10,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 
 h1, h2, h3, h4, h5, h6 {
 	padding: 5px 15px;
+	font-family: Ubuntu;
 }
 
 /* Body */
@@ -46,16 +48,26 @@ body {
 	color: rgb(179, 222, 255);
 }
 
-.main img {
-	height: 37vh;
+@media (min-width: 1001px){
+	.main img {
+		height: 37vh;
+		padding: 10px 0px 0px 10px;
+	}
 }
 
-.contact-top h2 {
-	padding: 30px;
-	text-align: center;
+@media (max-width: 1000px) {
+	.main img{
+		width: 40vw;
+		padding: 10px 0px 0px 10px;
+	}
 }
 
 /* Contact */
+.contact-top h2, .contact-top h1 {
+	padding: 15px 15px 15px 15px;
+	text-align: center;
+}
+
 .contact {
 	width: 50vw;
 	margin: 20px auto 20px auto;
