@@ -66,8 +66,15 @@ body {
 
 }
 
-.contact h2, .contact h3 {
+.contact h2 {
+	font-size: 60px;
+}
+
+.contact h3 {
 	font-size: 30px;
+}
+
+.contact h2, .contact h3 {
 	text-align: center;
 	overflow-wrap: break-word;
 }
