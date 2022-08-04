@@ -13,19 +13,21 @@ body {
 
 /* Main */
 .main  {
-	display: block;
 	padding: 10px;
 	border-radius: 10px;
 	border: solid 3px;
 	margin: 5vw;
 	font-size: larger;
 	color: rgb(255, 255, 255);	
+	overflow: hidden;
 }
 
 .main #profile_pic {
-        margin: 20px;
+        display: block;
+	margin: 20px;
         border-radius: 50%;
         float: right;
+	width: 20vw;
 }
 
 .main h1 {
@@ -52,6 +54,7 @@ body {
 	color: rgb(179, 222, 255);
 }
 
+
 @media (min-width: 1001px){
 	.main img {
 		height: 37vh;
@@ -66,28 +69,22 @@ body {
 	}
 }
 
-/* Contact */
-.contact-top h2, .contact-top h1 {
-	padding: 15px 15px 15px 15px;
-	text-align: center;
-}
-
+/*Contact*/
 .contact {
-	width: 50vw;
+	width: 10vw;
 	margin: 20px auto 20px auto;
-	padding: 20px;
+	padding: 2px;
 	border: 3px solid rgb(255, 255, 255);
 	border-radius: 10px;
-	display: block;
-
+	display: inline;
 }
 
 .contact h2 {
-	font-size: 60px;
+	font-size: 30px;
 }
 
 .contact h3 {
-	font-size: 30px;
+	font-size: 15px;
 }
 
 .contact h2, .contact h3 {
