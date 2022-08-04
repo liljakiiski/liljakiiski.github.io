@@ -1,4 +1,3 @@
-
 /* Reset */
 html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	margin: 0;
@@ -16,6 +15,13 @@ h1, h2, h3, h4, h5, h6 {
 /* Body */
 body {
 	background: rgb(0, 95, 150);
+}
+
+/*Index page*/
+.main #profile_pic {
+	margin: 20px;
+	border-radius: 50%;
+	float: right;
 }
 
 /* Main */
