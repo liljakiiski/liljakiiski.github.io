@@ -9,41 +9,43 @@ body {
 	text-color: white;
 }
 
+span {
+	display: inline;
+}
+
 .hovertext {
 	position: relative;
-	margin-bottom: 50px;
+	margin: 20px 50px 120px 20px;
 	display: inline-block;
-	width: 50vw;
-	font-size: 50px;
+	font-size: 10vw;
 }
 
 .hovertext:before {
   	content: attr(data-hover);
   	visibility: hidden;
 	opacity: 0;
-  	width: 50vw;
+  	width: 70vw;
   	background-color: black;
   	color: #fff;
   	text-align: center;
   	border-radius: 5px;
   	padding: 5px 0;
   	transition: opacity 1s ease-in-out;
-
   	position: absolute;
   	z-index: 1;
-  	left: 0;
   	top: 110%;
+	display: block; 
 }
 
 .hovertext:hover:before {
 	opacity: 1;
   	visibility: visible;
-	font-size: 10px;
+	font-size: 2vw;
 }
 
 /* Main */
 .main  {
-	padding: 10px;
+	padding: 20px;
 	border-radius: 10px;
 	border: solid 3px;
 	margin: 5vw;
@@ -89,7 +91,7 @@ body {
 	.main .drawings img {
 		height: 37vh;
 		border-radius: 10px;
-		border: 3px solid rgb(255, 255, 255);
+		border: 3px solid white;
 	}
 }
 
@@ -97,12 +99,12 @@ body {
 	.main .drawings img{
 		width: 40vw;
 		border-radius: 10px;
-                border: 3px solid rgb(255, 255, 255);
+                border: 3px solid white;
 	}
 }
 
 .contact a, .contact a:link, .contact a:visited {
-	color: rgb(255, 255, 255);
+	color: white;
 }
 
 /*Contact*/
@@ -120,11 +122,11 @@ body {
 .navbar a {
 	padding: 15px 30px;
 	margin: 12px;
-	border: 3px solid rgb(255, 255, 255);
+	border: 3px solid white;
 	border-radius: 7px;
 	display: inline;
   	float: left;
-  	color: rgb(255, 255, 255);
+  	color: white;
   	text-align: center;
   	text-decoration: none;
 	font-size: 17px;
