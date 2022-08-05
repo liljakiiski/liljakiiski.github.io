@@ -1,15 +1,45 @@
 h1, h2, h3, h4, h5, h6 {
 	padding: 5px;
-	font-family: Ubuntu;
 }
 
 /* Body */
 body {
-	background: rgb(0, 95, 150);
+	background: rgb(0, 11, 92);
+	font-family: Ubuntu;
+	text-color: white;
 }
 
-/*Index page*/
+.hovertext {
+	position: relative;
+	margin-bottom: 50px;
+	display: inline-block;
+	width: 50vw;
+	font-size: 50px;
+}
 
+.hovertext:before {
+  	content: attr(data-hover);
+  	visibility: hidden;
+	opacity: 0;
+  	width: 50vw;
+  	background-color: black;
+  	color: #fff;
+  	text-align: center;
+  	border-radius: 5px;
+  	padding: 5px 0;
+  	transition: opacity 1s ease-in-out;
+
+  	position: absolute;
+  	z-index: 1;
+  	left: 0;
+  	top: 110%;
+}
+
+.hovertext:hover:before {
+	opacity: 1;
+  	visibility: visible;
+	font-size: 10px;
+}
 
 /* Main */
 .main  {
@@ -18,7 +48,7 @@ body {
 	border: solid 3px;
 	margin: 5vw;
 	font-size: larger;
-	color: rgb(255, 255, 255);	
+	color: rgb(255, 255, 255);
 	overflow: hidden;
 }
 
@@ -50,47 +80,48 @@ body {
 	width: 50%;
 }
 
-.main a {
-	color: rgb(179, 222, 255);
+.main a, .main a:link, .main a:visited {
+	color: rgb(113, 186, 235);
 }
 
 
 @media (min-width: 1001px){
-	.main img {
+	.main .drawings img {
 		height: 37vh;
-		padding: 10px 0px 0px 10px;
+		border-radius: 10px;
+		border: 3px solid rgb(255, 255, 255);
 	}
 }
 
 @media (max-width: 1000px) {
-	.main img{
+	.main .drawings img{
 		width: 40vw;
-		padding: 10px 0px 0px 10px;
+		border-radius: 10px;
+                border: 3px solid rgb(255, 255, 255);
 	}
 }
 
-.contact a {
+.contact a, .contact a:link, .contact a:visited {
 	color: rgb(255, 255, 255);
 }
 
 /*Contact*/
 .contact h2{
-	padding: 12px;
+	padding-left: 50px;
 	display: inline-block;
 	font-size: 40px;
 }
 
 /* Navbar */
 .navbar {
-	background: rgb(0, 47, 74);
 	overflow: hidden;
 }
 
 .navbar a {
-	padding: 10px 20px;
-	margin: 8px;
-	border: 3px solid rgb(179, 222, 255);
-	border-radius: 5px;
+	padding: 15px 30px;
+	margin: 12px;
+	border: 3px solid rgb(255, 255, 255);
+	border-radius: 7px;
 	display: inline;
   	float: left;
   	color: rgb(255, 255, 255);
@@ -100,6 +131,6 @@ body {
 }
 
 .navbar a:hover {
-	background-color: rgb(3, 161, 103);
+	background: rgb(0, 11, 52);
 	color: white;
 }
