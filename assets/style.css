@@ -1,7 +1,3 @@
-h1, h2, h3, h4, h5, h6 {
-	
-}
-
 /* Body */
 body {
 	background: rgb(0, 11, 92);
@@ -65,15 +61,13 @@ body {
 }
 
 .game {
-	border: 1px solid white;
 	display: table-cell;
 	padding: 10px;
 	width: 33%;
-	float: top;
+	vertical-align: top;
 }
 
 .game img {
-	float: top;
 	width: 100%;
 }
 
