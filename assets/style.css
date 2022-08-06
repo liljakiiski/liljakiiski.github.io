@@ -3,13 +3,13 @@ body {
 	background: rgb(0, 11, 92);
 	font-family: Ubuntu;
 	text-color: white;
+	margin: 2vw;
 }
 
 /* Main */
 .main  {
 	border-radius: 10px;
 	border: solid 3px;
-	margin: 3vw;
 	padding: 20px;
 	font-size: larger;
 	color: rgb(255, 255, 255);
@@ -18,7 +18,7 @@ body {
 
 .main #profile_pic {
         display: block;
-	margin: 20px;
+	margin: 2vw;
         border-radius: 50%;
         float: right;
 	width: 20vw;
@@ -83,9 +83,9 @@ body {
 
 /*Contact*/
 .contact h2{
-	padding-left: 50px;
+	padding-right: 50px;
 	display: inline-block;
-	font-size: 40px;
+	font-size: 50px;
 }
 
 /* Navbar */
@@ -95,7 +95,8 @@ body {
 	
 .navbar a {
 	padding: 15px 30px;
-	margin: 12px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	border: 3px solid white;
 	border-radius: 7px;
 	display: inline;
