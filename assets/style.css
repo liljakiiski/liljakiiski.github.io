@@ -123,3 +123,8 @@ body {
 	background: rgb(0, 11, 52);
 	color: white;
 }
+
+.navbar #nav-programs {
+	background: rgb(52, 145, 69);
+        color: white;
+}
