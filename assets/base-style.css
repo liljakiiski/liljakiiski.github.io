@@ -1,7 +1,8 @@
+/* Base Style */
+
 /* Body */
 body {
 	font-family: Ubuntu;
-	text-color: white;
 	margin: 2vw;
 }
 
@@ -11,7 +12,6 @@ body {
 	border: solid 3px;
 	padding: 20px;
 	font-size: larger;
-	color: rgb(255, 255, 255);
 	overflow: hidden;
 }
 
@@ -37,7 +37,7 @@ body {
 	.main .drawings img {
 		height: 37vh;
 		border-radius: 10px;
-		border: 3px solid white;
+		border: 3px solid;
 	}
 }
 
@@ -46,7 +46,7 @@ body {
 	.main .drawings img{
 		width: 40vw;
 		border-radius: 10px;
-                border: 3px solid white;
+                border: 3px solid;
 	}
 }
 
@@ -108,7 +108,7 @@ body {
 	padding: 15px 30px;
 	margin-right: 20px;
 	margin-bottom: 20px;
-	border: 3px solid white;
+	border: 3px solid;
 	border-radius: 7px;
 	display: inline;
   	float: left;
@@ -119,22 +119,16 @@ body {
 
 .navbar #nav-index {
 	background: rgb(0, 11, 92);
-        color: white;	
 }
 
 .navbar #nav-programs {
 	background: rgb(52, 145, 69);
-  	color: black;
 }
 
 .navbar #nav-art {
 	background: rgb(113, 57, 173);
-        color: white;
 }
 
 .navbar #nav-games {
 	background: rgb(253, 255, 189);
-	color: black;
-	border: 3px solid black;
-        border-radius: 7px;
 }
