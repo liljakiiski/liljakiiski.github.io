@@ -51,6 +51,18 @@ body {
 	}
 }
 
+.emuintro {
+	width: 100%;
+}
+
+.emuintro img {
+	float: right;
+	width: 10%;
+	padding: 10px;
+	border: solid 1px white;
+	border-radius: 10px;
+}
+
 .allgames {
 	display: table;
 	table-layout: fixed;
