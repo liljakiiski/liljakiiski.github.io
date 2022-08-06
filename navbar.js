@@ -1,5 +1,5 @@
-fetch('navbar.html')
-//fetch('https://liljakiiski.github.io/navbar.html')
+//fetch('navbar.html')
+fetch('https://liljakiiski.github.io/navbar.html')
 .then(res => res.text())
 .then(text => {
     let oldelem = document.querySelector("script#navbar");
