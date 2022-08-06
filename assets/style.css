@@ -1,6 +1,5 @@
 /* Body */
 body {
-	background: rgb(0, 11, 92);
 	font-family: Ubuntu;
 	text-color: white;
 	margin: 2vw;
@@ -113,18 +112,29 @@ body {
 	border-radius: 7px;
 	display: inline;
   	float: left;
-  	color: white;
   	text-align: center;
   	text-decoration: none;
 	font-size: 17px;
 }
 
-.navbar a:hover {
-	background: rgb(0, 11, 52);
-	color: white;
+.navbar #nav-index {
+	background: rgb(0, 11, 92);
+        color: white;	
 }
 
 .navbar #nav-programs {
 	background: rgb(52, 145, 69);
+  	color: black;
+}
+
+.navbar #nav-art {
+	background: rgb(113, 57, 173);
         color: white;
+}
+
+.navbar #nav-games {
+	background: rgb(253, 255, 189);
+	color: black;
+	border: 3px solid black;
+        border-radius: 7px;
 }
