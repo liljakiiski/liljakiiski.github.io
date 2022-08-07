@@ -60,7 +60,7 @@ body {
 
 .emuintro img {
 	float: right;
-	width: 10%;
+	height: 12vh;
 	padding: 10px;
 	border: solid 1px;
 	border-radius: 10px;
