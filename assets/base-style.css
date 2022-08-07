@@ -51,7 +51,11 @@ body {
 }
 
 .emuintro {
+	margin-bottom: 20px;
+	padding: 5px;
 	width: 100%;
+	border: solid 1px;
+        border-radius: 10px;
 }
 
 .emuintro img {
@@ -60,6 +64,7 @@ body {
 	padding: 10px;
 	border: solid 1px;
 	border-radius: 10px;
+	margin: 10px;
 }
 
 .allgames {
