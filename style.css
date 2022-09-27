@@ -1,0 +1,28 @@
+/* Body */
+body {
+	font-family: Ubuntu;
+	margin: 2vw;
+	background: rgb(0, 0, 0);
+	color: white;
+}
+
+/* Main */
+.main  {
+	border-radius: 10px;
+	border: solid 3px;
+	padding: 20px;
+	font-size: larger;
+	overflow: hidden;
+}
+
+.main #profile_pic {
+        display: block;
+	margin: 2vw;
+        border-radius: 50%;
+        float: right;
+	width: 20vw;
+}
+
+.main p {
+	width: 50%;
+}
