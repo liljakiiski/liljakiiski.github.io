@@ -4,40 +4,24 @@
 body {
 	font-family: Ubuntu;
 	margin: 2vw;
-	background: rgb(0, 0, 0);
+	background: rgb(2, 0, 14);
 	color: white;
 }
 
-/* Main */
 .section1  {
 	padding: 20px;
 	font-size: larger;
 	overflow: hidden;
 }
 
-.section1 #profile_pic {
-    display: block;
-	margin: 2vw;
-    border-radius: 50%;
-    float: right;
-	width: 20vw;
+.section1 h1 {
+	font-size: 6vw;
 }
 
-.section1 p {
-	width: 50%;
+.section1 h2 {
+	font-size: 2vw;
 }
 
-.section1 a, .main a:link, .main a:visited {
-	color: rgb(113, 186, 235);
-}
-
-.contact a, .contact a:link, .contact a:visited {
-	color: white;
-}
-
-/*Contact*/
-.contact h2{
-	padding-right: 50px;
-	display: inline-block;
-	font-size: 50px;
+.section1 h1, .section1 h2 {
+	text-align: center;
 }
