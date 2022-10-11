@@ -4,7 +4,7 @@
 body {
 	font-family: Ubuntu;
 	margin: 2vw;
-	background: rgb(2, 0, 14);
+	background: rgb(3, 0, 19);
 	color: white;
 }
 
@@ -22,6 +22,6 @@ body {
 	font-size: 2vw;
 }
 
-.section1 h1, .section1 h2 {
+.section1 h1, .section1 h2, .section1 h3 {
 	text-align: center;
 }
