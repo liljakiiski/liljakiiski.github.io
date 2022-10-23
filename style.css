@@ -3,13 +3,11 @@
 /* Body */
 body {
 	font-family: Ubuntu;
-	margin: 2vw;
 	background: rgb(3, 0, 19);
 	color: white;
 }
 
 .section1  {
-	padding: 20px;
 	font-size: larger;
 	overflow: hidden;
 }
@@ -24,4 +22,12 @@ body {
 
 .section1 h1, .section1 h2, .section1 h3 {
 	text-align: center;
+}
+
+img {
+	width: 100%;
+	position:absolute;
+    left:0px;
+    top:0px;
+    z-index:-1;
 }
