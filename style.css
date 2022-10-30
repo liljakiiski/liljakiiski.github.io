@@ -1,5 +1,7 @@
 /* Base Style */
 
+/*https://css-tricks.com/making-charts-with-css/*/
+
 /* Body */
 body {
 	font-family: Ubuntu;
@@ -13,7 +15,7 @@ body {
 }
 
 .section1 h1 {
-	font-size: 6vw;
+	font-size: 50px;
 }
 
 .section1 h2 {
@@ -21,7 +23,7 @@ body {
 }
 
 .section1 h1, .section1 h2, .section1 h3 {
-	
+
 }
 
 img {
