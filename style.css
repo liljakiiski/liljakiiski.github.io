@@ -21,13 +21,12 @@ body {
 }
 
 .section1 h1, .section1 h2, .section1 h3 {
-	text-align: center;
+	
 }
 
 img {
-	width: 100%;
-	position:absolute;
-    left:0px;
-    top:0px;
-    z-index:-1;
+	width: 30vh;
+	height: 30vh;
+	float: right;
+	background: white;
 }
