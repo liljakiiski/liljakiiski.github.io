@@ -1,26 +1,19 @@
-/* Base Style */
-
-/*https://css-tricks.com/making-charts-with-css/*/
-
-/* Body */
 body {
 	font-family: Ubuntu;
 	background: rgb(3, 0, 19);
 	color: white;
 }
 
-.levels {
-	display: flex;
-	flex-direction: column;
+.langs th{
+	padding: 10px;
 }
 
-.levels h5 {
-	background: blue;
+.scale th{
+	padding: 10px;
 }
 
-.langs {
-	display: flex;
-	flex-direction: row;
+.scale td{
+	padding: 10px;
 }
 
 .section1  {
