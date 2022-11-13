@@ -1,32 +1,9 @@
 body {
 	font-family: Ubuntu;
-	background: rgb(3, 0, 19);
-	color: white;
 }
 
-.langs th{
-	padding: 10px;
-}
-
-.scale th{
-	padding: 10px;
-}
-
-.scale td{
-	padding: 10px;
-}
-
-.section1  {
-	font-size: larger;
-	overflow: hidden;
-}
-
-.section1 h1 {
-	font-size: 50px;
-}
-
-.section1 h2 {
-	font-size: 2vw;
+#section1 {
+	background: rgb(96, 75, 212);
 }
 
 img {
