@@ -1,14 +1,23 @@
-body {
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
+	margin: 0;
+	padding: 0;
+	border: 0;
 	font-family: Ubuntu;
 }
 
 #section1 {
+	height: 100vh;
+    left:0px;
+    top:0px;
 	background: rgb(96, 75, 212);
+	font-size: 3.3vw;
 }
 
-img {
-	width: 30vh;
-	height: 30vh;
-	float: right;
-	background: white;
+#name {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	margin: auto;
+	align-items:center;
+	justify-content:center;
 }
