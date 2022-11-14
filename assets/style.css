@@ -12,7 +12,6 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 
 #section1, #section2, #section3, #section4 {
 	height: 120vh;
-	width: 100vw;
     left:0px;
     top:0px;
 	margin: auto;
@@ -122,9 +121,9 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 */
 
 /* SMALL SCREEN */
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.slideshow-container {
-		max-width: 100%;
+		max-width: 400px;
 		position: relative;
 		margin: auto;
   	}
@@ -133,7 +132,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 		display: block;
 		margin: auto;
 		height: 50vh;
-		max-width: 100%;
+		max-width: 400px;
 	}
 }
 
