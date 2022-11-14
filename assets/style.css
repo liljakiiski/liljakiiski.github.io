@@ -123,6 +123,8 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 /* SMALL SCREEN */
 @media (max-width: 600px) {
 	.slideshow-container {
+		margin: 0;
+		padding: 0;
 		max-width: 100vw;
 		position: relative;
 		margin: auto;
@@ -130,10 +132,10 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 
 	.slideshow-container img {
 		display: block;
-		margin: 0;
+		margin: auto;
 		padding: 0;
 		height: 50vh;
-		width: 100%;
+		max-width: 100%;
 	}
 }
 
