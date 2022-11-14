@@ -43,6 +43,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	background: rgb(18, 209, 27);
 	margin: 40px;
 	padding: 20px;
+	text-align: center;
 }
 
 #section3 {
@@ -59,6 +60,37 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	padding: 70px;
 }
 
+#section3 h5{
+	text-align: center;
+	padding-top: 50px;
+}
+
+#section4 {
+	height: 100vh;
+    left:0px;
+    top:0px;
+	margin: auto;
+	background: rgb(0, 255, 98);
+	font-size: 3.3vw;
+}
+
+#section4 h1 {
+	text-align: center;
+	padding: 50px;
+}
+
+#contacts {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#contacts div {
+	font-size: 10vw;
+	padding: 50px;
+}
+
 /* Slideshow container */
 .slideshow-container {
   	max-width: 1000px;
@@ -67,15 +99,13 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 }
 
 .slideshow-container img {
-	height: 50vh;
 	display: block;
-  	margin-left: auto;
- 	 margin-right: auto;
-  	width: 50%;
+  	margin: auto;
+  	height: 50vh;
 }
 
 /* Hide the images by default */
-.mySlides {
+.slide {
   	display: none;
 }
 

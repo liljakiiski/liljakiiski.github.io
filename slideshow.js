@@ -11,7 +11,7 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    let slides = document.getElementsByClassName("mySlides");
+    let slides = document.getElementsByClassName("slide");
 
     if (n > slides.length) {
         slideIndex = 1;
@@ -24,6 +24,6 @@ function showSlides(n) {
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";  
     }
-    
+
     slides[slideIndex-1].style.display = "block";  
 }
