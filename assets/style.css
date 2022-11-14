@@ -84,14 +84,14 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 */
 
 #section4 {
-	height: 100vh;
+	height: 100%;
 	background: rgb(0, 255, 98);
 }
 
 #section4 h1 {
 	color: rgb(21, 0, 138);
 	text-align: center;
-	padding: 50px;
+	padding-top: 50px;
 }
 
 #section4 a:link, 
