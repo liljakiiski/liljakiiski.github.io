@@ -6,6 +6,10 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	color: black;
 }
 
+/*
+ * SECTION 1 START
+*/
+
 #section1, #section2, #section3, #section4 {
 	height: 120vh;
     left:0px;
@@ -21,6 +25,10 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	align-items: center;
 	justify-content: center;
 }
+
+/*
+ * SECTION 2 START
+*/
 
 #section2 {
 	background: rgb(218, 31, 146);
@@ -42,6 +50,10 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	text-align: center;
 }
 
+/*
+ * SECTION 3 START
+*/
+
 #section3 {
 	background: rgb(255, 238, 0);
 }
@@ -55,6 +67,10 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	text-align: center;
 	padding-top: 50px;
 }
+
+/*
+ * SECTION 4 START
+*/
 
 #section4 {
 	background: rgb(0, 255, 98);
@@ -77,25 +93,45 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	padding: 50px;
 }
 
-/* Slideshow container */
-.slideshow-container {
-  	max-width: 1000px;
-  	position: relative;
-  	margin: auto;
+/*
+ * SLIDESHOW START
+*/
+
+/* SMALL SCREEN */
+@media (max-width: 500px) {
+	.slideshow-container {
+		max-width: 100%;
+		position: relative;
+		margin: auto;
+  	}
+
+	.slideshow-container img {
+		display: block;
+		margin: auto;
+		height: 50vh;
+		max-width: 100%;
+	}
 }
 
-.slideshow-container img {
-	display: block;
-  	margin: auto;
-  	height: 50vh;
+/* LARGE SCREEN */
+@media (min-width: 501px) {
+	.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+  	}
+
+	.slideshow-container img {
+		display: block;
+		margin: auto;
+		height: 50vh;
+	}
 }
 
-/* Hide the images by default */
 .slide {
   	display: none;
 }
 
-/* Next & previous buttons */
 .prev, .next {
 	cursor: pointer;
 	position: absolute;
@@ -112,30 +148,27 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	user-select: none;
 }
 
-/* Position the "next button" to the right */
 .next {
   	right: 0;
   	border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   	background-color: rgba(0, 0, 0, 0.3);
 }
 
-/* Caption text */
 .text {
 	color: #f2f2f2;
 	background-color: rgba(0, 0, 0, 0.7);
 	font-size: 15px;
-	padding: 8px 12px;
 	position: absolute;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	bottom: 8px;
 	width: 100%;
 	text-align: center;
 }
 
-/* Fading animation */
 .fade {
   	animation-name: fade;
   	animation-duration: 1s;
