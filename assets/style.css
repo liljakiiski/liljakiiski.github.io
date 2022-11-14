@@ -12,6 +12,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 
 #section1, #section2, #section3, #section4 {
 	height: 120vh;
+	width: 100vw;
     left:0px;
     top:0px;
 	margin: auto;
