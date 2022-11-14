@@ -35,7 +35,6 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 }
 
 #section2 h1 {
-	text-align: center;
 	padding: 50px;
 }
 
@@ -46,72 +45,90 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	padding: 20px;
 }
 
-* { 
-	box-sizing: border-box;
+#section3 {
+	height: 100vh;
+    left:0px;
+    top:0px;
+	margin: auto;
+	background: rgb(255, 238, 0);
+	font-size: 3.3vw;
+}
+
+#section3 h1 {
+	text-align: center;
+	padding: 70px;
 }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
+  	max-width: 1000px;
+  	position: relative;
+  	margin: auto;
+}
+
+.slideshow-container img {
+	height: 50vh;
+	display: block;
+  	margin-left: auto;
+ 	 margin-right: auto;
+  	width: 50%;
 }
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  	display: none;
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.1);
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 5px 5px 0;
+	user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
+  	right: 0;
+  	border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.3);
+  	background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  background-color: rgba(0, 0, 0, 0.7);
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
+	color: #f2f2f2;
+	background-color: rgba(0, 0, 0, 0.7);
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
 }
 
 /* Fading animation */
 .fade {
-  animation-name: fade;
-  animation-duration: 2.5s;
+  	animation-name: fade;
+  	animation-duration: 1s;
 }
 
 @keyframes fade {
-  from {opacity: .2}
-  to {opacity: 1}
+  	from {
+		opacity: .4
+	} to {
+		opacity: 1
+	}
 }
