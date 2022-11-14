@@ -26,6 +26,10 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	justify-content: center;
 }
 
+#section1 h1, #section1 h4 {
+	color:rgb(255, 145, 0);
+}
+
 /*
  * SECTION 2 START
 */
@@ -38,7 +42,8 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	align-items: center;
 }
 
-#section2 h1 {
+#section2 h1, #section2 h4 {
+	color: rgb(61, 0, 85);
 	padding: 50px;
 }
 
@@ -58,14 +63,20 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	background: rgb(255, 238, 0);
 }
 
-#section3 h1 {
+#section3 h1, #section3 h5 {
+	color:rgb(255, 0, 0);
 	text-align: center;
 	padding: 70px;
 }
 
-#section3 h5{
-	text-align: center;
-	padding-top: 50px;
+#section3 a:link, 
+#section3 a:visited, 
+#section3 a:active {
+	color:rgb(224, 0, 0);
+}
+
+#section3 a:hover {
+	color: rgb(179, 0, 0);
 }
 
 /*
@@ -73,12 +84,24 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 */
 
 #section4 {
+	height: 100vh;
 	background: rgb(0, 255, 98);
 }
 
 #section4 h1 {
+	color: rgb(30, 0, 201);
 	text-align: center;
 	padding: 50px;
+}
+
+#section4 a:link, 
+#section4 a:visited, 
+#section4 a:active {
+	color: rgb(30, 0, 201);
+}
+
+#section4 a:hover {
+	color:rgb(23, 0, 156);
 }
 
 #contacts {
