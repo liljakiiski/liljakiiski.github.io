@@ -3,21 +3,28 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	padding: 0;
 	border: 0;
 	font-family: Ubuntu;
+	color: black;
 }
 
 #section1 {
 	height: 100vh;
     left:0px;
     top:0px;
-	background: rgb(96, 75, 212);
+	margin: auto;
+	background: rgb(30, 18, 100);
 	font-size: 3.3vw;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
-#name {
-	display: flex;
-	width: 100vw;
+#section2 {
 	height: 100vh;
+    left:0px;
+    top:0px;
 	margin: auto;
-	align-items:center;
-	justify-content:center;
+	background: rgb(218, 31, 146);
+	font-size: 3.3vw;
 }
