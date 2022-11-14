@@ -69,13 +69,13 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	padding: 70px;
 }
 
-#section3 a:link, 
-#section3 a:visited, 
-#section3 a:active {
+#projects-text a:link, 
+#projects-text a:visited, 
+#projects-text a:active {
 	color:rgb(224, 0, 0);
 }
 
-#section3 a:hover {
+#projects-text a:hover {
 	color: rgb(179, 0, 0);
 }
 
@@ -89,7 +89,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 }
 
 #section4 h1 {
-	color: rgb(30, 0, 201);
+	color: rgb(21, 0, 138);
 	text-align: center;
 	padding: 50px;
 }
@@ -97,11 +97,11 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 #section4 a:link, 
 #section4 a:visited, 
 #section4 a:active {
-	color: rgb(30, 0, 201);
+	color: rgb(21, 0, 138);
 }
 
 #section4 a:hover {
-	color:rgb(23, 0, 156);
+	color:rgb(15, 0, 97);
 }
 
 #contacts {
