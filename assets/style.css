@@ -30,8 +30,22 @@ h4 {
 	font-size: 25px;
 }
 
+/* CONTACT */
+
+#contact {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#contact div {
+	font-size: 10vw;
+	padding: 50px;
+}
+
 /* RESOURCES*/
-.resource-head h3{
+.resource-head h2{
 	margin-top: 30px;
 }
 
