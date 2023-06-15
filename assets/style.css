@@ -9,9 +9,54 @@ body {
 	background: rgb(210, 230, 255);
 }
 
+.tab {
+	display: inline-block;
+    margin-left: 40px;
+}
+
+h1 {
+	font-size: 50px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 25px;
+}
+
+/* RESOURCES*/
+.resource-head h3{
+	margin-top: 30px;
+}
+
 /* MAIN */
 .main {
 	color: rgb(0, 51, 128)
+}
+
+.main h2 {
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.main h3, .main h4 {
+	padding-left: 20px;
+	padding-top: 10px;
+}
+
+
+.main a {
+	color: rgb(0, 30, 75);
+}
+
+.main a:hover {
+  	color:rgb(63, 136, 245)
 }
 
 /* HEADER */
@@ -34,9 +79,9 @@ body {
   	float: left;
   	color: rgb(255, 255, 255);
   	text-align: center;
-  	padding: 14px 16px;
+  	padding: 20px 25px;
   	text-decoration: none;
-	font-size: 17px;
+	font-size: 30px;
 }
 
 .navbar a:hover {
