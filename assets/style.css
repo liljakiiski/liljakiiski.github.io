@@ -31,7 +31,6 @@ h4 {
 }
 
 /* CONTACT */
-
 #contact {
 	display: flex;
 	flex-direction: row;
@@ -64,6 +63,9 @@ h4 {
 	padding-top: 10px;
 }
 
+img {
+	padding: 20px;
+}
 
 .main a {
 	color: rgb(0, 30, 75);
