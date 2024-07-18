@@ -106,8 +106,36 @@ h5 {
 }
 
 /* RESOURCES*/
-.resource-head h2{
+.resource-head h2 {
 	margin-top: 30px;
+}
+
+/* Credits: https://jsfiddle.net/landzup/Lzjadp5r/ */
+.folder {
+	display: block; position: relative; top: 0; left: 0; margin: 18px 0;
+	font: 18px Roboto, helvetica, arial, sans-serif; text-indent: 27px; line-height: 34px;
+}
+
+.folder .icon {
+    content: ""; display: block; float: left; position: relative; top: 0; left: 0; width: 30px; height: 30px;
+    border: 2px solid rgb(0, 18, 46); background: rgb(0, 58, 145);
+    -moz-border-radius: 2px; -webkit-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px;
+    -moz-transform: scale(1) rotate(0deg) translateX(10px) skewX(10deg);
+    -webkit-transform: scale(1) rotate(0deg) translateX(10px) skewX(10deg);
+    -o-transform: scale(1) rotate(0deg) translateX(10px) skewX(10deg);
+    -ms-transform: scale(1) rotate(0deg) translateX(10px) skewX(10deg);
+    transform: scale(1) rotate(0deg) translateX(10px) skewX(10deg);
+}
+
+.folder .icon::after {
+    content: ""; display: block; position: relative; top: 7px; left: -6px; width: 30px; height: 21px;
+    border: 2px solid rgb(0, 18, 46); background: rgb(0, 58, 145);
+	-moz-border-radius: 2px; -webkit-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px;
+	-moz-transform: scale(1) rotate(0deg) translateX(10px) skewX(-20deg);
+	-webkit-transform: scale(1) rotate(0deg) translateX(10px) skewX(-20deg);
+	-o-transform: scale(1) rotate(0deg) translateX(10px) skewX(-20deg);
+	-ms-transform: scale(1) rotate(0deg) translateX(10px) skewX(-20deg);
+	transform: scale(1) rotate(0deg) translateX(10px) skewX(-20deg);
 }
 
 /* MAIN */
@@ -141,7 +169,7 @@ h5 {
 	display: flex;
 	overflow: hidden;
 	flex-wrap: wrap;
-	justify-content: left;
+	justify-content: center;
 }
    
 .aboutme img {
