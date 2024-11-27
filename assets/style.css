@@ -89,19 +89,38 @@ h5 {
 	flex-wrap: wrap;
 	justify-content: left; /* change here if want to center the area*/
 }
-   
-/*
-.aboutme img {
-	max-width: 100%;
-	max-height:400px;
-	margin: 30px;
-}
-*/
-   
+  
 .aboutme .text {
 	align-self: top;
-	max-width: 500px;
+	/*max-width: 500px;*/
 	text-align: left;
+}
+
+.aboutme_large {
+	display: flex;
+	overflow: hidden;
+	flex-wrap: wrap;
+	justify-content: left; /* change here if want to center the area*/
+}
+
+.aboutme_large .text {
+	align-self: top;
+	/*max-width: 500px;*/
+	text-align: left;
+}
+
+.aboutme_large img {
+	max-width: 100%;
+	max-height: 300px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-right: 80px;
+	border: solid 5px #ff7aa2;
+}
+
+.aboutme_large li {
+	font-size: 20px;
+	padding-top: 14px;
 }
 
 /* CONTACT */
