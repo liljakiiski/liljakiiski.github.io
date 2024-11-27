@@ -5,7 +5,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	font-family: "Gowun Dodum", sans-serif;
   	font-weight: 400;
   	font-style: normal;
-	color: #383838;
+	color: #2e2e2e;
 }
 
 body {
@@ -18,8 +18,7 @@ body {
     );
   position: relative;
   height: 100vh; /* Full height */
-  margin: 0;
-  overflow: hidden;
+  margin: 50px;
 }
 
 .tab {
@@ -50,13 +49,11 @@ h5 {
 
 /* HEADER */
 .header {
-
 }
 
-.header h1 {
-	padding: 30px;
+/* MAIN */
+.main {
 }
-
 
 /* NAVBAR */
 .navbar {
@@ -64,16 +61,16 @@ h5 {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: left;
-	margin-right: 25px;
 }
 
 .navbar a {
   	float: left;
   	text-align: center;
-  	padding: 15px 20px;
+	padding-right: 20px;
+	padding-top: 40px;
+	padding-bottom: 40px;
   	text-decoration: none;
 	font-size: 30px;
-	margin-left: 15px;
 }
 
 .navbar a:hover {
@@ -81,9 +78,9 @@ h5 {
 }
 
 .navbar a.active {
-  	color: #ff7aa2;
+  	/*color: #ff7aa2;*/
+	color: #4193ff;
 }
-
 
 /* ABOUT ME */
 .aboutme {
@@ -113,8 +110,11 @@ h5 {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: left;
-	margin-left: 15px;
-	margin-top: 10px;
+	padding-top: 20px;
+}
+
+.contact h3 {
+	margin-bottom: 10px;
 }
 
 .contact-item {
@@ -130,30 +130,6 @@ h5 {
 }
 
 .folder {
-	padding:10px;
+	padding-left:10px;
+	padding-bottom: 30px;
 }
-
-/* MAIN */
-.main {
-	padding: 20px;
-}
-
-.main h2 {
-	padding-left: 20px;
-	padding-top: 10px;
-}
-
-.main h3, .main h4 {
-	padding-left: 20px;
-	padding-top: 10px;
-}
-
-/*
-.main a {
-	color: rgb(0, 30, 75);
-}
-
-.main a:hover {
-  	color:rgb(63, 136, 245);
-}
-*/
