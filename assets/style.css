@@ -152,3 +152,65 @@ h5 {
 	padding-left:10px;
 	padding-bottom: 30px;
 }
+
+/* CROCHET GALLERY : Majority credit to ChatGPT4*/
+.crochet-search-bar {
+	text-align: left;
+	margin-bottom: 20px;
+}
+.crochet-search-bar input {
+	width: 60%;
+	padding: 10px;
+	font-size: 16px;
+	border: 2px solid #000000;
+	border-radius: 4px;
+}
+.crochet-gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: left;
+	gap: 20px;
+}
+.crochet-box {
+	background: #fff;
+	/*border: 1px solid #ddd;*/
+	border-radius: 8px;
+	width: 300px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	overflow: hidden;
+	transition: transform 0.2s;
+}
+.crochet-box:hover {
+	transform: scale(1.05);
+}
+.crochet-box .crochet-images {
+	display: flex;
+	gap: 5px;
+	padding: 10px;
+	justify-content: center;
+}
+.crochet-box .crochet-images img {
+	width: 48%;
+	height: auto;
+	border-radius: 4px;
+}
+.crochet-box .crochet-content {
+	padding: 15px;
+	text-align: center;
+}
+.crochet-box .crochet-tags {
+	margin-top: 10px;
+	font-size: 0.9em;
+	color: #000000;
+}
+.crochet-box .crochet-tags span {
+	background: #eef;
+	border-radius: 4px;
+	padding: 3px 6px;
+	margin: 0 5px;
+}
+.crochet-box a {
+	text-decoration: none;
+	color: #007BFF;
+	font-weight: bold;
+}
