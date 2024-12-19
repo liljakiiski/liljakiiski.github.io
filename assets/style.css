@@ -155,8 +155,9 @@ h5 {
 
 /* CROCHET GALLERY : Majority credit to ChatGPT4*/
 .crochet-search-bar {
-	text-align: left;
+	text-align: center;
 	margin-bottom: 20px;
+	margin-top: 20px;
 }
 
 .crochet-search-bar input {
