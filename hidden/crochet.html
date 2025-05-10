@@ -1,0 +1,620 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>LJA | Crochet</title>
+		<link rel="stylesheet" type="text/css" href="assets/style.css">
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"> 
+		<script src="https://kit.fontawesome.com/d4b1dbcaad.js" crossorigin="anonymous"></script>
+		
+		<!--Script for displaying crochet animals based on tags-->
+		<script>
+			function filterGallery() {
+				const query = document.getElementById('searchInput').value.toLowerCase();
+				const boxes = document.querySelectorAll('.crochet-box');
+	
+				boxes.forEach(box => {
+					const tags = Array.from(box.querySelectorAll('.crochet-tags span')).map(tag => tag.textContent.toLowerCase());
+					if (tags.some(tag => tag.includes(query))) {
+						box.style.display = '';
+					} else {
+						box.style.display = 'none';
+					}
+				});
+			}
+		</script>
+	</head>
+
+	<body>
+		<div class="header">
+			<h1>✏️ Lilja-Site | Crochet</h1>
+		</div>
+
+		<div class="navbar">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="resources.html">Resources</a>
+			<a class="active" href="crochet.html">Crochet</a>
+		</div>
+
+		<div class="text">
+			<h5>This is my page for all things mainly crochet, with a couple knitted projects sprinkled in. 
+				Each project has the pattern linked, the pattern's image, the creator's name, and if I've finished
+				 it - a picture of my version of the pattern. Note, for projects I've made, there are currently no 
+				patterns available - but I hope to make some soon! :) </h5>
+		</div>
+	
+		<div class="main">
+			<div class="crochet-search-bar">
+				<input type="text" id="searchInput" placeholder="Search by tags..." oninput="filterGallery()">
+			</div>
+
+			<div class="crochet-gallery">
+				<!-- Esther the Elephant | -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://cdn.jesshuff.com/cdn-cgi/imagedelivery/_el0QnEY9jNTqanHvIPcKg/jesshuff.com/2018/06/free-elephant-crochet-pattern-16x9-1.jpg/w=1200">
+						<!--<img src="assets/crochet/none">-->
+					</div>
+					<div class="crochet-content">
+						<a href="https://jesshuff.com/esther-elephant-free-amigurumi-pattern/">Esther the Elephant</a>
+						<h6>Creator: Jess Huff</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>elephant</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Spring Snail | -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://www.stitchbyfay.com/wp-content/uploads/2020/11/IMG_20201107_145038_0301blog-800x800.jpg">
+						<!--<img src="assets/crochet/none">-->
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.stitchbyfay.com/spring-snail-crochet-pattern/">Spring Snail</a>
+						<h6>Creator: Fay</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>snail</span>
+							<span>unfinished</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Dinosaurs | -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://i.pinimg.com/736x/aa/ff/73/aaff73f540350b7cf9760ff7d58d971b.jpg">
+						<!--<img src="assets/crochet/none">-->
+					</div>
+					<div class="crochet-content">
+						<a href="https://amiamour.com/dinosaur-amigurumi-pattern/">Dinosaur</a>
+						<h6>Creator: Ami Amour</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>dinosaur</span>
+							<span>unfinished</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Itty Bitty Kitty | -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://thoresbycottage.com/wp-content/uploads/2018/08/IMG_1265-min-1024x824.jpg">
+						<!--<img src="assets/crochet/none">-->
+					</div>
+					<div class="crochet-content">
+						<a href="https://thoresbycottage.com/2018/08/28/crochet-cat-pattern/">Itty Bitty Kitty</a>
+						<h6>Creator: Thoresby cottage</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>kitty</span>
+							<span>cat</span>
+							<span>unfinished</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Dumpling Kitty | Charity store -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://images4-f.ravelrycache.com/uploads/critterbeans/367254467/webp/IMG_1520_02_small2.webp#jpg">
+						<img src="assets/crochet/dumpling-kitty.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.ravelry.com/patterns/library/dumpling-kitty">Dumpling Kitty</a>
+						<h6>Creator: Sarah Sloyer</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>dumpling kitty</span>
+							<span>cat</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Bear | Charity store -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://3.bp.blogspot.com/-iAldxv33V3o/WuSnliakp_I/AAAAAAAAAxA/sEWgmufz2TIMLqJjx6oIqtSp4112DOvYQCLcBGAs/s1600/crochet-bears-amigurumi.jpg">
+						<img src="assets/crochet/bear.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://amigurum.com/2018/04/crochet-bear-amigurumi.html">Bear</a>
+						<h6>Creator: Julia Deinega</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>bear</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Nessie | Charity store -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://images4-g.ravelrycache.com/uploads/JNowal/283880759/webp/2012-03_Nessie01_edit_small2.webp#JPG">
+						<img src="assets/crochet/nessie.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.ravelry.com/patterns/library/nessie-4">Nessie</a>
+						<h6>Creator: 26 Donuts</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>lockness monster</span>
+							<span>nessie</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Balloon Dog | Gift to Luka V 2024 -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://images4-f.ravelrycache.com/uploads/MorningGlories/872110230/20220825_125448_small2.jpg">
+						<img src="assets/crochet/balloon-dog.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.ravelry.com/patterns/library/balloon-dog-9">Balloon Dog</a>
+						<h6>Creator: Gloria B</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>balloon dog</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- (Knitted) Fluffy Scarf | ? -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<!--<img src="none">-->
+						<img src="assets/crochet/fluffy-scarf.png">
+					</div>
+					<div class="crochet-content">
+						<a href="none">Knitted Fluffy Scarf</a>
+						<h6>Creator: Lilja</h6>
+						<div class="crochet-tags">
+							<span>scarf</span>
+							<span>clothing</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Tiny Frog | Gift to Keerat B's sister 2024 -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://i.pinimg.com/736x/49/e7/76/49e776a575ead29da81778a352603a75.jpg">
+						<img src="assets/crochet/tiny-frog.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://amiguworld.com/meet-the-adorable-tiny-frog-amigurumi-pattern/">Tiny Frog</a>
+						<h6>Creator: Amigu World</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>frog</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Crissy Doll | Gift to Noora K 2024 -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://i.pinimg.com/736x/64/df/bf/64dfbfefa9fb12313672b8f353e7ca53.jpg">
+						<img src="assets/crochet/crissy-doll.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://amigurumi.today/free-crissy-crochet-doll-amigurumi-pattern/">Crissy Doll</a>
+						<h6>Creator: Amigurumi Today</h6>
+						<div class="crochet-tags">
+							<span>doll</span>
+							<span>crissy</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Kangaroo | Charity store -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://stringydingding.com/wp-content/uploads/2022/07/Free-amigurumi-crochet-kangaroo-pattern-768x768.jpg">
+						<img src="assets/crochet/kangaroo.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://stringydingding.com/kangaroo-amigurumi-free-crochet-pattern/">Kangaroo</a>
+						<h6>Creator: StringyDingDing</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>kangaroo</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Monkey | Charity store -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://www.allaboutami.com/wp-content/uploads/2016/02/tumblr_inline_o1y1wwTim51qfosqa_540-1.jpg">
+						<img src="assets/crochet/monkey.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.allaboutami.com/monkeypattern/">Monkey</a>
+						<h6>Creator: All About Ami</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>monkey</span>
+							<span>banana</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Many Cats Pillow | Charity store -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://static.wixstatic.com/media/a27d24_8dbd8d41b94a46d59e88fa3881d960b9~mv2.jpg/v1/fill/w_740,h_433,al_c,lg_1,q_80,enc_auto/a27d24_8dbd8d41b94a46d59e88fa3881d960b9~mv2.jpg">
+						<img src="assets/crochet/many-cats-pillow.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.ponymctate.com/post/many-cats-square----free-pattern">Many Cats Pillow</a>
+						<h6>Creator: Pony McTate</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>cat</span>
+							<span>pillow</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Colourful Mini Dinos | Gift to Alina K 2024 -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYE09wcw6wYR0405qG_I90fF6OqhF0TdbPQsErVSqP2i5eIWWdGuK4XZbkynZJ76aYHFEmhyD87mckiX6oGCsB2CEqkJHrZ8bntPXRD-HT-rLp5BTsYR4ImRbe0Ypq7ZVwHdif4HTSd4-B/w320-h320/Colourful+mini+dino+small.jpg">
+						<img src="assets/crochet/colourful-mini-dinos.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://handmadebyani.blogspot.com/2020/10/mini-dino-free-pattern.html">Colourful Mini Dinos</a>
+						<h6>Creator: Handmade by Ani</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>dinosaur</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Loki the Llama | Gift to Mummi ja Ukki 2024 -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://jesshuff.com/wp-content/uploads/2022/07/crochet-llama-free-pattern-amigurumi-3.jpg">
+						<img src="assets/crochet/loki-the-llama.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://jesshuff.com/loki-the-llama-free-amigurumi-pattern/">Loki the Llama</a>
+						<h6>Creator: Jess Huff</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>llama</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Tree Frog | Gift to Keerat B's sister 2024 -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://cdn.shopify.com/s/files/1/1163/8814/files/PT_IMGP0279_large.jpg?v=1558154752">
+						<img src="assets/crochet/tree-frog.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://kristitullus.com/blogs/news/free-pattern-tree-frog">Tree Frog</a>
+						<h6>Creator: Kristi Tullus</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>frog</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Bird | Gift to Siran G 2024 -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://limegreenlady.wordpress.com/wp-content/uploads/2015/03/e31a82751.jpg">
+						<img src="assets/crochet/bird.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://limegreenlady.wordpress.com/2015/03/20/crochet-bird-pattern/">Bird</a>
+						<h6>Creator: Lime Green Lady</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>bird</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Baby Humpback Whale | ? -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://www.1dogwoof.com/wp-content/uploads/2016/11/humpback-whale-3.jpg">
+						<img src="assets/crochet/baby-humpback-whale.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.1dogwoof.com/humpback-whale-crochet-pattern/">Baby Humpback Whale</a>
+						<h6>Creator: ChiWei</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>humpback whale</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Benny the Seal | Charity store -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://static.wixstatic.com/media/3b4120_b8f226c3b47d431fbe9db0c1821924cf~mv2.jpg/v1/fill/w_350,h_350,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3b4120_b8f226c3b47d431fbe9db0c1821924cf~mv2.jpg">
+						<!--<img src="assets/crochet/none">-->
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.elisascrochet.com/post/benny-the-seal-free-crochet-pattern">Benny the Seal</a>
+						<h6>Creator: Elisa's Crochet</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>seal</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Small Cat | Charity store -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://www.lilleliis.com/wp-content/uploads/2015/05/free-amigurumi-cat-pattern-1.jpg">
+						<!--<img src="assets/crochet/none-->
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.lilleliis.com/amigurumi-crochet-freebies/amigurumi-small-cat/">Small Cat</a>
+						<h6>Creator: Mari-Liis Lille</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>cat</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Lying bear | Charity store -->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://1.bp.blogspot.com/-m3u7nm3dYec/XbWs8NLAp0I/AAAAAAAACTE/WMHkPnV77NgNVd0C-BvPO2QmcmZSB50IACLcBGAsYHQ/s1600/lying-bear-amigurumi.jpg">
+						<img src="assets/crochet/lying-bear.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://amigurum.com/2019/10/lying-bear-crochet-pattern.html">Lying Bear</a>
+						<h6>Creator: Amiguroom Toys</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>bear</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Brontosaurus Dinosaur | Gift to Susanna K 2024-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://stringydingding.com/wp-content/uploads/2020/10/dinosaurs.png">
+						<img src="assets/crochet/brontosaurus-dinosaur.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://stringydingding.com/brontosaurus-dinosaur-amigurumi-free-crochet-pattern/">Dinosaur</a>
+						<h6>Creator: StringyDingDing</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>dinosaur</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Sweet Little Bunny | Gift to Siran G, Mitushi J 2024-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://i0.wp.com/helloyellowyarn.com/wp-content/uploads/2022/04/Sweet-Little-Bunny-Amigurumi-5.jpg?resize=768%2C768&ssl=1">
+						<img src="assets/crochet/sweet-little-bunny.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://helloyellowyarn.com/2022/04/02/sweet-little-bunny-free-amigurumi-pattern/">Sweet Little Bunny</a>
+						<h6>Creator: MJCarlos</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>bunny</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Chickens | Gift to Catherine C 2023-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://amigurumi.space/wp-content/uploads/2019/04/crochet-chicken-amigurumi.jpg">
+						<!--<img src="assets/crochet/none">-->
+					</div>
+					<div class="crochet-content">
+						<a href="https://amigurumi.space/crochet-chicken-free-amigurumi-pattern/">Chickens</a>
+						<h6>Creator: Olik Ask</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>chicken</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Pigeon Birb | Gift to Siran G 2023-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://clubcrochet.com/wp-content/uploads/2020/10/10_Pigeon_member-472x355.jpg">
+						<!--<img src="assets/crochet/none">-->
+					</div>
+					<div class="crochet-content">
+						<a href="https://clubcrochet.com/lessons/pigeon-birb-amigurumi/">Pigeon Birb</a>
+						<h6>Creator: Louie's Loops</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>pigeon birb</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Bruno the Polar Bear | Gift to Carina K 2024-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://octopuscrochet.com/wp-content/uploads/2021/02/Bruno-the-polar-bear-amigurumi-pattern-40.jpg">
+						<img src="assets/crochet/bruno-the-polar-bear.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://octopuscrochet.com/bruno-the-polar-bear-amigurumi-pattern/">Bruno the Polar Bear</a>
+						<h6>Creator: Clotilde</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>polar bear</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Cube Foxy Fox | Gift to Luukas K 2024-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://www.craftybunnybun.com/hs-fs/hubfs/IMG_20181211_190308-01-01-01.jpeg?width=1371&name=IMG_20181211_190308-01-01-01.jpeg">
+						<img src="assets/crochet/cube-foxy-fox.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.craftybunnybun.com/cube-foxy-fox-amigurumi-pattern">Cube Foxy Fox</a>
+						<h6>Creator: CraftyBunnyBun</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>fox</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Fred the Sea Turtle | Gift to Keerat B 2024-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://i.ytimg.com/vi/Q2aIpN8gqfM/maxresdefault.jpg">
+						<img src="assets/crochet/fred-the-sea-turtle.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://cjdesignblog.com/fred-the-sea-turtle/">Fred the Sea Turtle</a>
+						<h6>Creator: CJ Design</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>turtle</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Little Hazelnut the Rabbit | Gift to Juliana B 2024-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://amigurumi.blogkb.com/wp-content/uploads/2020/12/Little-Hazelnut-The-Rabbit-Amigurumi-Free-Pattern.jpg">
+						<img src="assets/crochet/little-hazelnut-the-rabbit.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://amigurumi.blogkb.com/little-hazelnut-the-rabbit-amigurumi-free-pattern/">Little Hazelnut the Rabbit</a>
+						<h6>Creator: Amigurumi Blogkb</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>rabbit</span>
+							<span>bunny</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Chubby Penguin | Gift to Carina K 2024-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://blogger.googleusercontent.com/img/a/AVvXsEitdAXLESfkMX4N4xQoYjuC93d_SfIWKcX6ocPZ97ZcSgu0pVGbFyR9NWTzrQlFzEKT46yQuHBOHyWSPgzy_eZHRhhjjoxU4DyT9li26IQh5g-Ph7960UUwMWBbmM1IHlk2Gi5xgnfMGDXYhrKDwQfwabS8Tw0lm2xlFHILb4CMkcs_SoVCXldgae5oMw=s16000">
+						<!--<img src="assets/crochet/none">-->
+					</div>
+					<div class="crochet-content">
+						<a href="https://amigurumi.blogkb.com/little-hazelnut-the-rabbit-amigurumi-free-pattern/">Chubby Penguins</a>
+						<h6>Creator: Rose & Lily</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>penguin</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Jellyfish | Gift to Keerat B 2024-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<img src="https://www.1dogwoof.com/wp-content/uploads/2016/05/crochet-jellyfish-5.jpg">
+						<img src="assets/crochet/jellyfish.png">
+					</div>
+					<div class="crochet-content">
+						<a href="https://www.1dogwoof.com/crochet-jellyfish/">Jellyfish</a>
+						<h6>Creator: ChiWei</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>jellyfish</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Spotty Puppy | Gift to Kaia Y 2024-->
+				<div class="crochet-box">
+					<div class="crochet-images">
+						<!--<img src="none"> -->
+						<img src="assets/crochet/spotty-puppy.png">
+					</div>
+					<div class="crochet-content">
+						<a href="no pattern!">Spotty Puppy</a>
+						<h6>Creator: Lilja</h6>
+						<div class="crochet-tags">
+							<span>animal</span>
+							<span>puppy</span>
+							<span>dog</span>
+							<span>done</span>
+						</div>
+					</div>
+				</div>
+        </div>
+	</body>	
+</html>
