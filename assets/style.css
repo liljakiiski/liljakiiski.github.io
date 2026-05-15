@@ -47,13 +47,19 @@ h5 {
 	padding: 10px;
 }
 
-/* PROJECT GRID STUFF */
+/* PROJECT GRID STUFF 
+Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
+*/
 .project-card {
 	padding: 2em;
 	border: 1px solid #000000;
 	border-radius: 10px;
 	background-color: #666666;
 	text-align: center;
+}
+
+.project-card {
+	transform: scale(1.05);
 }
 
 .projects-container {
@@ -63,6 +69,14 @@ h5 {
 	justify-content: center;
 }
 
+.project-tags {
+	margin: 20px;
+}
+
+.tag {
+	padding:5px;
+	background-color: #e0e0e0;
+}
 
 /* NAVBAR */
 .navbar {
