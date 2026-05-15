@@ -71,19 +71,19 @@ https://matthewjamestaylor.com/holy-grail-layout
 
 .left-sidebar-grid > .left-sidebar, .holy-grail-grid > .left-sidebar {
     grid-area:left-sidebar;
-    background:#f5d55f;
+    background:#72c2f1;
     text-align: center;
 }
 
 .holy-grail-grid > .right-sidebar {
 	grid-area:right-sidebar;
-    background:#f5d55f;
+	background:#72c2f1;
     text-align: center;
 }
 
 .left-sidebar-grid > .footer, .holy-grail-grid > .footer {
     grid-area:footer;
-    background:#72c2f1;
+    background:#f5d55f;
 }
 
 /* tablet breakpoint */
@@ -172,11 +172,13 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 
 .graphics-card {
 	padding: 20px;
-	background-color: #cfcfcf;
+	background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #000000;
 	text-align: center;
 }
 
-.project-card:hover {
+.project-card:hover, .graphics-card:hover {
 	transform: scale(1.01);
 }
 
@@ -210,7 +212,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 .graphics-images img{
 	width: auto;
 	height: 250px;
-	border-radius: 5px;
+	border: 1px solid #000000;
 	background: #ffffff;
 }
 
@@ -249,35 +251,50 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 }
 
 .navbar a:hover {
-	text-decoration: underline;
+	
+	transform: scale(1.05);
 }
 
 .navbar a.active {
-	
+
 }
 
 
 /* CONTACT */
 .contact {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: left;
-	padding-top: 20px;
+	border: 1px solid #000000;
+
+	justify-content: center;
 }
 
-.contact h3 {
-	margin-bottom: 10px;
+.contact-all-items {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	align-items: left;
+}
+
+.contact h2, .contact h3 {
+	padding-top: 10px;
+	text-align: center;
 }
 
 .contact-item {
 	display: flex;
-	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
 	padding: 10px;
-	align-items: left;
-	font-size: 25px;
+	margin-left: 10px;
+	font-size: 40px;
+	
 }
 
 .contact-item a {
-	size: 20px;
+	color: #008cff;
+}
+
+.contact-item a:hover {
+	transform: scale(1.05);
 }
