@@ -45,6 +45,7 @@ h5 {
 .header {
 	background: #d3d3d3;
 	padding: 10px;
+	text-align: center;
 }
 
 /* PROJECT GRID STUFF 
@@ -52,48 +53,54 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 */
 .project-card {
 	padding: 2em;
-	border: 1px solid #000000;
 	border-radius: 10px;
-	background-color: #666666;
+	border: 7px solid #999999;
+	background-color: #cfcfcf;
 	text-align: center;
 }
 
-.project-card {
-	transform: scale(1.05);
+.project-card:hover {
+	transform: scale(1.01);
 }
 
 .projects-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 15px;
+	gap: 20px;
 	justify-content: center;
 }
 
-.project-tags {
-	margin: 20px;
+.project-timeframe {
+	margin: 5px;
 }
 
-.tag {
+.project-tags {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-tags span {
+	white-space: nowrap;
 	padding:5px;
+	margin: 5px;
+	border-radius: 5px;
 	background-color: #e0e0e0;
 }
 
 /* NAVBAR */
 .navbar {
-	margin-left: 50px;
 	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: left;
+	justify-content: center;
 }
 
 .navbar a {
   	float: left;
   	text-align: center;
 	padding: 10px;
-	margin-right: 20px;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin: 10px;
   	text-decoration: none;
 	font-size: 30px;
 	background: #e4e4e4
@@ -105,47 +112,6 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 
 .navbar a.active {
 	
-}
-
-/* ABOUT ME */
-.aboutme {
-	display: flex;
-	overflow: hidden;
-	flex-wrap: wrap;
-	justify-content: left; /* change here if want to center the area*/
-}
-  
-.aboutme .text {
-	align-self: top;
-	/*max-width: 500px;*/
-	text-align: left;
-}
-
-.aboutme_large {
-	display: flex;
-	overflow: hidden;
-	flex-wrap: wrap;
-	justify-content: left; /* change here if want to center the area*/
-}
-
-.aboutme_large .text {
-	align-self: top;
-	/*max-width: 500px;*/
-	text-align: left;
-}
-
-.aboutme_large img {
-	max-width: 100%;
-	max-height: 300px;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	margin-right: 80px;
-	border: solid 5px #ff7aa2;
-}
-
-.aboutme_large li {
-	font-size: 20px;
-	padding-top: 14px;
 }
 
 /* CONTACT */
@@ -171,9 +137,4 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 
 .contact-item a {
 	size: 20px;
-}
-
-.folder {
-	padding-left:10px;
-	padding-bottom: 30px;
 }
