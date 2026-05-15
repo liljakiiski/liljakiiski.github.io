@@ -1,24 +1,20 @@
+/* This website has been recreated without the usage of AI*/
+
 html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-family: "Gowun Dodum", sans-serif;
+	font-family: sans-serif;
   	font-weight: 400;
   	font-style: normal;
-	color: #2e2e2e;
+	color: #000000;
 }
 
 body {
-	background: 
-    repeating-linear-gradient(
-      to bottom, 
-      #fffefb, /* Cream background color */
-      #fffefb 38px, /* Space until the next line */
-      #b8d6ff 40px /* Blue line every 20px */
-    );
-  position: relative;
-  height: 100vh; /* Full height */
-  margin: 50px;
+	background: white;
+	position: relative;
+	height: 100vh; /* Full height */
+	margin: 30px;
 }
 
 .tab {
@@ -46,13 +42,99 @@ h5 {
 	font-size: 20px;
 }
 
-
-/* HEADER */
 .header {
+	background: #d3d3d3;
+	padding: 10px;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
-/* MAIN */
-.main {
+/* PROJECT GRID STUFF 
+Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
+*/
+.projects-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	justify-content: center;
+}
+
+.graphics-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+	gap: 20px;
+	justify-content: center;
+}
+
+.projects-introduction {
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	background-color: #cfcfcf;
+	margin-bottom: 20px;
+}
+
+.project-card {
+	padding: 20px;
+	background-color: #cfcfcf;
+	text-align: center;
+}
+
+.graphics-card {
+	padding: 20px;
+	background-color: #cfcfcf;
+	text-align: center;
+}
+
+.project-card:hover {
+	transform: scale(1.01);
+}
+
+.project-timeframe {
+	margin: 5px;
+}
+
+.project-tags {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-tags span {
+	white-space: nowrap;
+	padding:5px;
+	margin: 5px;
+	border-radius: 5px;
+	background-color: #e9e9e9;
+}
+
+.project-images, .graphics-images{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.graphics-images img{
+	width: auto;
+	height: 250px;
+	border-radius: 5px;
+	background: #ffffff;
+}
+
+.project-images img {
+	width: auto;
+	height: 250px;
+	border-radius: 5px;
+}
+
+.project-overview {
+	background-color: #e9e9e9;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
 }
 
 /* NAVBAR */
@@ -60,17 +142,18 @@ h5 {
 	overflow: hidden;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: left;
+	justify-content: center;
 }
 
 .navbar a {
   	float: left;
   	text-align: center;
-	padding-right: 20px;
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding: 10px;
+	margin: 10px;
   	text-decoration: none;
-	font-size: 30px;
+	font-size: 20px;
+	background-color: #e9e9e9;
+	border-radius: 5px;
 }
 
 .navbar a:hover {
@@ -78,48 +161,7 @@ h5 {
 }
 
 .navbar a.active {
-  	/*color: #ff7aa2;*/
-	color: #4193ff;
-}
-
-/* ABOUT ME */
-.aboutme {
-	display: flex;
-	overflow: hidden;
-	flex-wrap: wrap;
-	justify-content: left; /* change here if want to center the area*/
-}
-  
-.aboutme .text {
-	align-self: top;
-	/*max-width: 500px;*/
-	text-align: left;
-}
-
-.aboutme_large {
-	display: flex;
-	overflow: hidden;
-	flex-wrap: wrap;
-	justify-content: left; /* change here if want to center the area*/
-}
-
-.aboutme_large .text {
-	align-self: top;
-	text-align: left;
-}
-
-.aboutme_large img {
-	max-width: 100%;
-	max-height: 300px;
-	margin-top: 20px;
-	margin-bottom: 40px;
-	margin-right: 50px;
-	border: solid 5px #ff7aa2;
-}
-
-.aboutme_large li {
-	font-size: 20px;
-	padding-top: 14px;
+	
 }
 
 /* CONTACT */
@@ -145,88 +187,4 @@ h5 {
 
 .contact-item a {
 	size: 20px;
-}
-
-.folder {
-	padding-left:10px;
-	padding-bottom: 30px;
-}
-
-/* CROCHET GALLERY : Majority credit to ChatGPT4*/
-.crochet-search-bar {
-	text-align: center;
-	margin-bottom: 20px;
-	margin-top: 30px;
-}
-
-.crochet-search-bar input {
-	width: 60%;
-	padding: 10px;
-	font-size: 16px;
-	border: 2px solid #000000;
-	border-radius: 4px;
-}
-
-.crochet-gallery {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	gap: 20px;
-}
-
-.crochet-box {
-	background: #fff;
-	/*border: 1px solid #ddd;*/
-	border-radius: 8px;
-	width: 400px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-	overflow: hidden;
-	transition: transform 0.2s;
-}
-
-.crochet-box:hover {
-	transform: scale(1.05);
-}
-
-.crochet-box .crochet-images {
-	display: flex;
-	gap: 5px;
-	padding-right: 10px;
-	padding-left:10px;
-	padding-top: 10px;
-	justify-content: center;
-}
-
-.crochet-box .crochet-images img {
-	width: auto;
-	height: 150px;
-	border-radius: 4px;
-}
-
-.crochet-box .crochet-content {
-	padding: 15px;
-	text-align: center;
-}
-
-.crochet-box h6 {
-	padding:5px;
-}
-
-.crochet-box .crochet-tags {
-	margin-top: 5px;
-	font-size: 0.9em;
-	color: #000000;
-}
-
-.crochet-box .crochet-tags span {
-	background-color: rgb(65, 147, 255, 0.35);
-	border-radius: 4px;
-	padding: 3px 6px;
-	margin: 0 2px;
-}
-
-.crochet-box a {
-	text-decoration: underline;
-	color: #ff7aa2;
-	font-weight: bold;
 }
