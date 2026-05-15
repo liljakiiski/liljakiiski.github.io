@@ -24,7 +24,12 @@ body {
     margin-left: 40px;
 }
 
-/* Credits: https://matthewjamestaylor.com/left-sidebar-layout*/
+/* 
+MAIN & PORTFOLIO PAGES
+ Credits: https://matthewjamestaylor.com/left-sidebar-layout
+https://matthewjamestaylor.com/holy-grail-layout
+*/
+
 /* grid container */
 .left-sidebar-grid {
     display:grid;
@@ -35,27 +40,48 @@ body {
         'footer';
 }
 
+
+/* grid container */
+.holy-grail-grid {
+    display:grid;
+    grid-template-areas:
+        'header'
+        'main-content'
+        'left-sidebar'
+        'right-sidebar'
+        'footer';
+}
+
 /* general column padding */
-.left-sidebar-grid > * {
+.left-sidebar-grid > *, .holy-grail-grid > * {
     padding:1rem;
 }
 
 /* assign columns to grid areas */
-.left-sidebar-grid > .header {
+.left-sidebar-grid > .header, .holy-grail-grid > .header {
     grid-area:header;
     background:#f97171;
     text-align: center;
 }
-.left-sidebar-grid > .main-content {
+
+.left-sidebar-grid > .main-content, .holy-grail-grid > .main-content {
     grid-area:main-content;
     background:#fff;
 }
-.left-sidebar-grid > .left-sidebar {
+
+.left-sidebar-grid > .left-sidebar, .holy-grail-grid > .left-sidebar {
     grid-area:left-sidebar;
     background:#f5d55f;
     text-align: center;
 }
-.left-sidebar-grid > .footer {
+
+.holy-grail-grid > .right-sidebar {
+	grid-area:right-sidebar;
+    background:#f5d55f;
+    text-align: center;
+}
+
+.left-sidebar-grid > .footer, .holy-grail-grid > .footer {
     grid-area:footer;
     background:#72c2f1;
 }
@@ -69,8 +95,27 @@ body {
             'left-sidebar main-content main-content'
             'footer footer footer';
     }
+
+	.holy-grail-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            'header header'
+            'main-content main-content'
+            'left-sidebar right-sidebar'
+            'footer footer';
+    }
 }
 
+/* desktop breakpoint */
+@media (min-width:1024px) {
+    .holy-grail-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            'header header header header'
+            'left-sidebar main-content main-content right-sidebar'
+            'footer footer footer footer';
+    }
+}
 
 /* PROJECT GRID STUFF 
 Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
