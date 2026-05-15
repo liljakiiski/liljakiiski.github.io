@@ -52,11 +52,14 @@ h5 {
 /* PROJECT GRID STUFF 
 Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 */
+.projects-page {
+	display: inline-block;
+}
+
 .projects-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 20px;
-	justify-content: center;
 }
 
 .graphics-container {
