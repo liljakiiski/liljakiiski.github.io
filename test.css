@@ -18,6 +18,12 @@ body {
     border: 3px solid #000000;
 }
 
+
+.tab {
+	display: inline-block;
+    margin-left: 40px;
+}
+
 /* Credits: https://matthewjamestaylor.com/left-sidebar-layout*/
 /* grid container */
 .left-sidebar-grid {
@@ -107,7 +113,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 
 .projects-introduction {
 	padding: 20px;
-	background-color: #cfcfcf;
+	background-color: #ffffff;
 	margin-bottom: 20px;
 }
 
@@ -203,4 +209,30 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 
 .navbar a.active {
 	
+}
+
+
+/* CONTACT */
+.contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: left;
+	padding-top: 20px;
+}
+
+.contact h3 {
+	margin-bottom: 10px;
+}
+
+.contact-item {
+	display: flex;
+	flex-direction: row;
+	padding: 10px;
+	align-items: left;
+	font-size: 25px;
+}
+
+.contact-item a {
+	size: 20px;
 }

@@ -13,52 +13,71 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 body {
 	background: white;
 	position: relative;
-	height: 100vh; /* Full height */
-	margin: 30px;
+	
+	margin: 20px;
+    border: 3px solid #000000;
 }
+
 
 .tab {
 	display: inline-block;
     margin-left: 40px;
 }
 
-h1 {
-	font-size: 50px;
+/* Credits: https://matthewjamestaylor.com/left-sidebar-layout*/
+/* grid container */
+.left-sidebar-grid {
+    display:grid;
+    grid-template-areas:
+        'header'
+        'main-content'
+        'left-sidebar'
+        'footer';
 }
 
-h2 {
-	font-size: 40px;
+/* general column padding */
+.left-sidebar-grid > * {
+    padding:1rem;
 }
 
-h3 {
-	font-size: 30px;
+/* assign columns to grid areas */
+.left-sidebar-grid > .header {
+    grid-area:header;
+    background:#f97171;
+    text-align: center;
+}
+.left-sidebar-grid > .main-content {
+    grid-area:main-content;
+    background:#fff;
+}
+.left-sidebar-grid > .left-sidebar {
+    grid-area:left-sidebar;
+    background:#f5d55f;
+    text-align: center;
+}
+.left-sidebar-grid > .footer {
+    grid-area:footer;
+    background:#72c2f1;
 }
 
-h4 {
-	font-size: 25px;
+/* tablet breakpoint */
+@media (min-width:768px) {
+    .left-sidebar-grid {
+        grid-template-columns:repeat(3, 1fr);
+        grid-template-areas:
+            'header header header'
+            'left-sidebar main-content main-content'
+            'footer footer footer';
+    }
 }
 
-h5 {
-	font-size: 20px;
-}
-
-.header {
-	background: #d3d3d3;
-	padding: 10px;
-	text-align: center;
-	margin-bottom: 20px;
-}
 
 /* PROJECT GRID STUFF 
 Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 */
-.projects-page {
-	display: inline-block;
-}
-
 .projects-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 	gap: 20px;
 }
 
@@ -69,17 +88,40 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	justify-content: center;
 }
 
+.project-title {
+    padding: 5px;   
+    display: inline;
+}
+
+.project-title.pink {
+    background-color:rgba(255, 0, 140, 0.5); 
+}
+
+.project-title.blue {
+    background-color:rgba(0, 204, 255, 0.5); 
+}
+
+
+.project-title.green {
+    background-color:rgba(36, 180, 0, 0.5); 
+}
+
+
+.project-title.yellow {
+    background-color:rgba(255, 230, 0, 0.5); 
+}
+
 .projects-introduction {
-	justify-content: center;
-	text-align: center;
 	padding: 20px;
-	background-color: #cfcfcf;
+	background-color: #ffffff;
 	margin-bottom: 20px;
 }
 
 .project-card {
 	padding: 20px;
-	background-color: #cfcfcf;
+	background-color: #ffffff;
+    border-radius: 5px;
+    border: 2px solid #000000;
 	text-align: center;
 }
 
@@ -151,12 +193,14 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 .navbar a {
   	float: left;
   	text-align: center;
-	padding: 10px;
-	margin: 10px;
+	padding: 8px;
+	margin-right: 10px;
+    margin-top: 5px;
   	text-decoration: none;
-	font-size: 20px;
-	background-color: #e9e9e9;
+	font-size: 15px;
+	background-color: #ffffff;
 	border-radius: 5px;
+    border: 2px solid #000000
 }
 
 .navbar a:hover {
@@ -166,6 +210,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 .navbar a.active {
 	
 }
+
 
 /* CONTACT */
 .contact {
