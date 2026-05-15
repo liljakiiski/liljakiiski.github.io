@@ -14,7 +14,7 @@ body {
 	background: white;
 	position: relative;
 	height: 100vh; /* Full height */
-	margin: 50px;
+	margin: 30px;
 }
 
 .tab {
@@ -46,28 +46,48 @@ h5 {
 	background: #d3d3d3;
 	padding: 10px;
 	text-align: center;
+	margin-bottom: 20px;
 }
 
 /* PROJECT GRID STUFF 
 Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 */
+.projects-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	justify-content: center;
+}
+
+.graphics-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+	gap: 20px;
+	justify-content: center;
+}
+
+.projects-introduction {
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	background-color: #cfcfcf;
+	margin-bottom: 20px;
+}
+
 .project-card {
-	padding: 2em;
-	border-radius: 10px;
-	border: 7px solid #999999;
+	padding: 20px;
+	background-color: #cfcfcf;
+	text-align: center;
+}
+
+.graphics-card {
+	padding: 20px;
 	background-color: #cfcfcf;
 	text-align: center;
 }
 
 .project-card:hover {
 	transform: scale(1.01);
-}
-
-.projects-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-	gap: 20px;
-	justify-content: center;
 }
 
 .project-timeframe {
@@ -85,20 +105,36 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	padding:5px;
 	margin: 5px;
 	border-radius: 5px;
-	background-color: #e0e0e0;
+	background-color: #e9e9e9;
 }
 
-.project-images {
+.project-images, .graphics-images{
 	display: flex;
-	gap: 5px;
+	flex-wrap: wrap;
+	gap: 10px;
 	padding: 10px;
-	justify-content: center;	
+	align-items: center;
+	justify-content: center;
+}
+
+.graphics-images img{
+	width: auto;
+	height: 250px;
+	border-radius: 5px;
+	background: #ffffff;
 }
 
 .project-images img {
 	width: auto;
 	height: 250px;
-	border-radius: 4px;
+	border-radius: 5px;
+}
+
+.project-overview {
+	background-color: #e9e9e9;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
 }
 
 /* NAVBAR */
@@ -115,8 +151,9 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	padding: 10px;
 	margin: 10px;
   	text-decoration: none;
-	font-size: 30px;
-	background: #e4e4e4
+	font-size: 20px;
+	background-color: #e9e9e9;
+	border-radius: 5px;
 }
 
 .navbar a:hover {

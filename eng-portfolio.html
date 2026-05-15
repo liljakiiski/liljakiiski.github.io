@@ -9,17 +9,30 @@
 
 	<body>
 		<div class="header">
-			<h1>Lilja The Website | Home</h1>
+			<h4>Lilja Kiiski - The Website</h4>
+            <h1>Engineering Portfolio</h1>
 
 			<div class="navbar">
-				<a class="active" href="index.html">Home</a>
-				<a class="active" href="index.html">Home</a>
+				<a href="index.html">Home</a>
+                <a class="active" href="eng-portfolio.html">Engineering Portofolio</a>
+				<a href="graphics-portfolio.html">Graphics Portofolio</a>
 			</div>
 		</div>
 
-        <br>
-	
 		<div class="main">
+            <div class="projects-introduction">
+                <h5>
+                Welcome to my Engineering Portfolio! Here you’ll find some of my favorite projects. Click on a
+                project to learn more about it, including the development process, challenges, and achievements.
+                </h5>
+
+                <br>
+                
+                <h5>
+                ⚠️ Note! There is some crossover with the Software Portfolio
+                </h5>
+            </div>
+            
 			<div class="projects-container">
                 <!-- Project -->
                 <div class="project-card">
@@ -45,14 +58,9 @@
                     <div class="project-text">
                         <div class="project-overview">
                             <p>
-                            This project aimed to design, analyze, and verify a 4-bit Carry Save Adder--
-                            a digital circuit that computes the sum of three or more binary numbers by utilizing four full adders. 
-                            </p>
-                            <br>
-                            <p>
                             As a final project for my Intro to SoCET class, my team decided to make a 4-bit Carry Save Adder (CSA).
-                            This project aimed to design, analyze, and verify a 4-bit Carry Save Adder--a digital circuit that 
-                            computes the sum of (in this case three) binary numbers by utilizing four full adders.
+                            A CSA is a digital circuit that computes the sum of (in this case: three) or more binary numbers
+                            by utilizing four full adders.
                             </p>
                         </div>
                     </div>
@@ -84,13 +92,76 @@
                     <div class="project-overview">
                         <span>I participated in the FIRST Robotics Competition throughout my four years of high school, 
                             leading the computer vision subdivision for the 2025 season. The main purpose of this was
-                             to increase the robots cycle times (how fast it could retrieve cargo and score), by allowing
-                              the robot to auto-align to a scoring location, compared to needing to do so manually
+                            to increase the robots cycle times (how fast it could retrieve cargo and score), by allowing
+                            the robot to auto-align to a scoring location, compared to needing to do so manually
                         </span>
                     </div>
                 </div>
 
+                <!-- Project -->
+                <div class="project-card">
+                    <h3 class="project-title">
+                        Honeycomb Game Console
+                    </h3>
 
+                    <h5 class="project-timeframe">
+                        May - June 2025
+                    </h5>
+
+                    <div class="project-images">
+						<img src="assets/engineering-portfolio/honeycomb1.png">
+                        <img src="assets/engineering-portfolio/honeycomb3.png">
+					</div>
+
+                    <div class="project-tags">
+                        <span>C++</span>
+                        <span>Arduino</span>
+                        <span>CAD</span>
+                        <span>Electrical</span>
+                    </div>
+
+                    <div class="project-overview">
+                        <span>
+                        As a video games enjoyer I thought it would be fun to design a miniature game
+                        console myself using Arduino. I mainly used spare parts I had lying around,
+                        and used my school’s 3D printers for the case.
+                        </span>
+                    </div>
+                </div>
+
+                    <!-- Project -->
+                <div class="project-card">
+                    <h3 class="project-title">
+                        ENGR161 Line Follower Robot
+                    </h3>
+
+                    <h5 class="project-timeframe">
+                        October - December 2025
+                    </h5>
+
+                    <div class="project-images">
+						<img src="assets/engineering-portfolio/engr161-1.png">
+					</div>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Linux</span>
+                        <span>Raspberry Pi</span>
+                        <span>Electrical</span>
+                        <span>Robotics</span>
+                        <span>LEGO</span>
+                    </div>
+
+                    <div class="project-overview">
+                        <span>
+                        As the final project for ENGR161 we were tasked to create a LEGO robot to hold
+                        and deploy cargo whilst following a black line on a white terrain. My team came up
+                        with a solution using 2 grove hall line finder sensors, a color sensor, and an IMU,
+                        and was successfully able to follow the line to the finish and deploy cargo on
+                        detection of a magnet.
+                        </span>
+                    </div>
+                </div>
             </div>
         </div>
 	</body>	
