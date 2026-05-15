@@ -88,6 +88,19 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	background-color: #e0e0e0;
 }
 
+.project-images {
+	display: flex;
+	gap: 5px;
+	padding: 10px;
+	justify-content: center;	
+}
+
+.project-images img {
+	width: auto;
+	height: 250px;
+	border-radius: 4px;
+}
+
 /* NAVBAR */
 .navbar {
 	overflow: hidden;
