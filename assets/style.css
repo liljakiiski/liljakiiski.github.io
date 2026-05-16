@@ -143,7 +143,7 @@ Credits: https://www.joshwcomeau.com/css/interactive-guide-to-grid/
 	background: #e1e5f2;
 }
 
-@media (max-width:768px) {
+@media (max-width:1000px) {
     .holy-grail-grid {
 		grid-template-columns: 100%;
 	}
@@ -165,9 +165,10 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 
 .graphics-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(400, 1fr));
 	gap: 20px;
 	justify-content: center;
+	padding: 20px;
 }
 
 .project-title {
@@ -182,7 +183,6 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 .project-title.blue {
     background-color:rgba(0, 204, 255, 0.5); 
 }
-
 
 .project-title.green {
     background-color:rgba(36, 180, 0, 0.5); 
