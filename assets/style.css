@@ -1,27 +1,40 @@
 /* This website has been recreated without the usage of AI*/
 
 html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
-	margin: 0;
-	padding: 0;
-	border: 0;
 	font-family: sans-serif;
   	font-weight: 400;
   	font-style: normal;
 	color: #000000;
 }
 
-body {
-	background: white;
-	position: relative;
-	
-	margin: 20px;
-    border: 3px solid #000000;
+/* Credits: https://www.brunildo.org/test/html_body_11b.html */
+html {
+	background-color: #ffffff;
+	padding: 0px;
 }
 
+html, body {
+	height: 100%;
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	border: 5px solid #000000;
+}
 
 .tab {
 	display: inline-block;
     margin-left: 40px;
+}
+
+.aboutme {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	
 }
 
 /* 
@@ -60,13 +73,14 @@ https://matthewjamestaylor.com/holy-grail-layout
 /* assign columns to grid areas */
 .left-sidebar-grid > .header, .holy-grail-grid > .header {
     grid-area:header;
-    background:#f97171;
+    /*background:#f97171;*/
     text-align: center;
 }
 
 .left-sidebar-grid > .main-content, .holy-grail-grid > .main-content {
     grid-area:main-content;
-    background:#fff;
+	padding: 10px;
+    /*background:#ffffff;*/
 }
 
 .left-sidebar-grid > .left-sidebar, .holy-grail-grid > .left-sidebar {
@@ -117,6 +131,10 @@ https://matthewjamestaylor.com/holy-grail-layout
     }
 }
 
+.headerin {
+	text-align: center;
+}
+
 /* PROJECT GRID STUFF 
 Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 */
@@ -165,7 +183,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 .project-card {
 	padding: 20px;
 	background-color: #ffffff;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     border: 2px solid #000000;
 	text-align: center;
 }
@@ -173,7 +191,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 .graphics-card {
 	padding: 20px;
 	background-color: #ffffff;
-    border-radius: 5px;
+    /*border-radius: 5px;*/
     border: 2px solid #000000;
 	text-align: center;
 }
@@ -245,9 +263,9 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
     margin-top: 5px;
   	text-decoration: none;
 	font-size: 15px;
-	background-color: #ffffff;
+	background-color: #72c2f1;;
 	border-radius: 5px;
-    border: 2px solid #000000
+    /*border: 2px solid #000000*/
 }
 
 .navbar a:hover {
