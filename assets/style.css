@@ -28,6 +28,17 @@ html, body {
 	box-sizing: border-box;
 }
 
+.penguins {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	justify-content: center;
+}
+
+.penguins img {
+	max-height: 30vh;
+}
+
 .tab {
 	display: inline-block;
     margin-left: 40px;
