@@ -175,7 +175,7 @@ Credits: https://www.joshwcomeau.com/css/interactive-guide-to-grid/
 	background: #e1e5f2;
 }
 
-@media (max-width:1000px) {
+@media (max-width: 1500px) {
     .penguins {
 		max-width: 100%;
 		max-height: 100%;
