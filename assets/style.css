@@ -14,13 +14,13 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	padding: 0;
 }
 
-h1 {font-size: clamp(1.8rem, 8vw, 3rem); }
+h1 {font-size: clamp(3rem, 8vw, 5rem); }
 
-h2 {font-size: 1.5em; }
+h2 {font-size: 2em; }
 
-h3 {font-size: 1.17rem; }
+h3 {font-size: 1.5rem; }
 
-h4 {font-size: 1rem; }
+h4 {font-size: 1.25rem; }
 
 h5 {font-size: 0.83rem; }
 
@@ -66,11 +66,20 @@ html, body {
 }
 
 /* HEADER */
+.header-outer {
+	width: 100%;
+}
+
 .header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	background: #bfdbf7;
 	justify-content: center;
 	text-align: center;
 	padding: 20px;
+	height: 30vh;
+	vertical-align: middle;
 }
 
 .header-title {
@@ -199,14 +208,14 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 */
 .projects-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 	gap: 20px;
 	padding: 20px;
 }
 
 .graphics-container {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(400, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 	gap: 20px;
 	justify-content: center;
 	padding: 20px;
