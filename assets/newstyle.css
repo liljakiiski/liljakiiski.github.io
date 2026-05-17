@@ -40,13 +40,13 @@ body {
 
 /* MAIN PAGE CONTAINER */
 
-.right-sidebar {
+.right-sidebar, .left-sidebar {
     height: 50%;
     display:flex;
     flex-wrap:wrap;
 }
 
-.right-sidebar > * {
+.right-sidebar > *, .left-sidebar > * {
     width:100%;
 }
 
@@ -59,12 +59,19 @@ body {
         width:calc(100% / 3);
     }
 
+    .left-sidebar > *:nth-child(1) {
+        width:calc(100% / 3);
+    }
+
+    .left-sidebar > *:nth-child(2) {
+        width:calc(100% / 3 * 2);
+    }
+
     .right-sidebar {
     height: 90%;
     display:flex;
     flex-wrap:wrap;
-}
-    
+    }
 }
 
 .helloblock {
@@ -133,6 +140,7 @@ CREDIT: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 
 .navbar {
     padding-top: 10px;
+    padding-right: 20px;
     overflow: hidden;
 }
 
@@ -190,4 +198,112 @@ CREDIT: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* PROJECT GRID STUFF 
+Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
+*/
+.projects-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+.graphics-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+	gap: 20px;
+	justify-content: center;
+	padding: 20px;
+}
+
+.project-title {
+    padding: 5px;   
+    display: inline;
+}
+
+.project-title.pink {
+    background-color:rgba(255, 0, 140, 0.5); 
+}
+
+.project-title.blue {
+    background-color:rgba(0, 204, 255, 0.5); 
+}
+
+.project-title.green {
+    background-color:rgba(36, 180, 0, 0.5); 
+}
+
+.project-title.yellow {
+    background-color:rgba(255, 230, 0, 0.5); 
+}
+
+.pre-projects-intro {
+    text-align: center;
+}
+
+.projects-introduction {
+    padding: 20px;
+    margin: 20px;
+    background: #bfdbf7;
+}
+
+.project-card, .graphics-card {
+	padding: 20px;
+	background-color: #ffffff;
+    border-radius: 2px;
+    border: 2px solid #000000;
+	text-align: center;
+}
+
+.project-card:hover, .graphics-card:hover {
+	transform: scale(1.01);
+}
+
+.project-timeframe {
+	margin: 5px;
+}
+
+.project-tags {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.project-tags span {
+	white-space: nowrap;
+	padding:5px;
+	margin: 5px;
+	border-radius: 5px;
+	background-color: #e9e9e9;
+}
+
+.project-images, .graphics-images{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	padding: 10px;
+	align-items: center;
+	justify-content: center;
+}
+
+.graphics-images img{
+	width: auto;
+	height: 250px;
+	border: 1px solid #000000;
+	background: #ffffff;
+}
+
+.project-images img {
+	width: auto;
+	height: 250px;
+	border-radius: 5px;
+}
+
+.project-overview {
+	background-color: #e9e9e9;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 5px;
 }
