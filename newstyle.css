@@ -1,0 +1,173 @@
+/* This website has been recreated without the usage of AI*/
+
+* {
+	box-sizing: border-box;
+    -ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
+	font-family: sans-serif;
+  	font-weight: 400;
+  	font-style: normal;
+	color: #000000;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {font-size: 15vh; }
+
+h2 {font-size: 10vh; }
+
+h3 {font-size: 1.5rem; }
+
+h4 {font-size: 1.25rem; }
+
+h5 {font-size: 0.83rem; }
+
+h6 {font-size: 0.67rem; }
+
+/* Credits: https://www.brunildo.org/test/html_body_11b.html */
+html {
+	background-color: #ffffff;
+	padding: 0px;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/* MAIN PAGE CONTAINER */
+
+/* container */
+.right-sidebar {
+    height: 100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+/* columns */
+.right-sidebar > * {
+    width:100%;
+    padding:1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width:800px) {
+    .right-sidebar > *:nth-child(1) {
+        width:calc(100% / 3 * 2);
+    }
+    .right-sidebar > *:nth-child(2) {
+        width:calc(100% / 3);
+    }
+}
+
+/* HEADER */
+
+.header {
+    background:#f97171;
+}
+
+.helloblock {
+    background: yellow;
+}
+
+.helloblock h1, .helloblock h2{
+    color: #022b3a;
+}
+
+.hellopfp {
+    background: green;
+}
+
+/* CONTACT */
+
+.contact-all-items {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: left;
+}
+
+.contact-item {
+	display: flex;
+	flex-wrap: wrap;
+
+	padding: 10px;
+	margin-left: 10px;
+	font-size: 40px;	
+}
+
+.contact-item a {
+	color: #022b3a;
+}
+
+.contact-item a:hover {
+	transform: scale(1.05);
+}
+
+/* 
+NAVBAR 
+CREDIT: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+*/
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  font-size: 2em;
+  color: #022b3a;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 2em;
+  border: none;
+  outline: none;
+  color: #022b3a;
+  padding: 14px 16px;
+  background-color: inherit;
+  /* Following is important for vertical align on mobile phones */
+  font-family: inherit; 
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
