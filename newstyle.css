@@ -16,9 +16,9 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	padding: 0;
 }
 
-h1 {font-size: 15vh; }
+h1 {font-size: clamp(5rem, 15vw, 7rem); }
 
-h2 {font-size: 10vh; }
+h2 {font-size: clamp(4rem, 10vw, 6rem); }
 
 h3 {font-size: 1.5rem; }
 
@@ -28,7 +28,6 @@ h5 {font-size: 0.83rem; }
 
 h6 {font-size: 0.67rem; }
 
-/* Credits: https://www.brunildo.org/test/html_body_11b.html */
 html {
 	background-color: #ffffff;
 	padding: 0px;
@@ -41,21 +40,18 @@ body {
 
 /* MAIN PAGE CONTAINER */
 
-/* container */
 .right-sidebar {
     height: 100%;
     display:flex;
     flex-wrap:wrap;
 }
 
-/* columns */
 .right-sidebar > * {
     width:100%;
     padding:1rem;
 }
 
-/* tablet breakpoint */
-@media (min-width:800px) {
+@media (min-width:1200px) {
     .right-sidebar > *:nth-child(1) {
         width:calc(100% / 3 * 2);
     }
@@ -64,14 +60,18 @@ body {
     }
 }
 
+
 /* HEADER */
 
-.header {
-    background:#f97171;
-}
-
 .helloblock {
-    background: yellow;
+    height: 100%;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+	vertical-align: middle; 
 }
 
 .helloblock h1, .helloblock h2{
@@ -79,7 +79,22 @@ body {
 }
 
 .hellopfp {
-    background: green;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+}
+
+.hellopfp img {
+    float: right;
+    width: 100%;
+}
+
+.hellopfp h4, .hellopfp h5, .hellopfp h6 {
+    float: right;
+    color: #022b3a;
 }
 
 /* CONTACT */
