@@ -20,13 +20,13 @@ h1 {font-size: clamp(5rem, 15vh, 6rem); }
 
 h2 {font-size: clamp(4rem, 10vw, 5rem); }
 
-h3 {font-size: 3.2vh; }
+h3 {font-size: calc(.5em + 2.2vh);; }
 
-h4 {font-size: 2.5vh; }
+h4 {font-size: calc(.5em + 1.8vh);; }
 
-h5 {font-size: 2vh; }
+h5 {font-size: calc(.5em + 1.2vh);; }
 
-h6 {font-size: 1.6vh; }
+h6 {font-size: calc(.5em + 1vh);; }
 
 span {font-size: 2vh; }
 
@@ -266,7 +266,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 }
 
 .project-timeframe {
-	margin: 5px;
+    padding-top: 15px;
 }
 
 .project-tags {
@@ -310,4 +310,27 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	padding: 10px;
 	margin-top: 10px;
 	border-radius: 5px;
+}
+
+
+/* PENGUINS PAGE */
+
+.penguins {
+	max-width: 50%;
+	max-height: 50%;
+	width: auto;
+	
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.penguins img {
+	width: 100%;
+}
+
+.tenor-gif-embed {
+	data-width: "50%";
 }
