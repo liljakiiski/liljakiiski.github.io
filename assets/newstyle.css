@@ -44,7 +44,7 @@ body {
 
 /* MAIN PAGE CONTAINER */
 
-.right-sidebar, .left-sidebar {
+.right-sidebar, .left-sidebar, .one-page {
     height: 50%;
     display:flex;
     flex-wrap:wrap;
@@ -77,6 +77,8 @@ body {
     flex-wrap:wrap;
     }
 }
+
+/* WHY, HELLO*/
 
 .helloblock {
     height: 100%;
@@ -214,14 +216,6 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	padding: 20px;
 }
 
-.graphics-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
-	gap: 20px;
-	justify-content: center;
-	padding: 20px;
-}
-
 .project-title {
     padding: 5px;   
     display: inline;
@@ -244,16 +238,29 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 }
 
 .pre-projects-intro {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    /*background: #bfdbf7;*/
+    border: 2px dashed black;
+    margin: 0px 20px 0px 20px;
 }
 
 .projects-introduction {
+    width: 50%;
     padding: 20px;
-    margin: 20px;
-    background: #bfdbf7;
 }
 
-.project-card, .graphics-card {
+@media (max-width: 1500px) {
+    .projects-introduction {
+    width: 100%;
+    padding: 20px;
+} 
+}
+
+.project-card {
 	padding: 20px;
 	background-color: #ffffff;
     border-radius: 2px;
@@ -261,7 +268,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	text-align: center;
 }
 
-.project-card:hover, .graphics-card:hover {
+.project-card:hover {
 	transform: scale(1.01);
 }
 
@@ -333,4 +340,24 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 
 .tenor-gif-embed {
 	data-width: "50%";
+}
+
+.hobby {
+    padding: 10px;
+}
+
+.hobby span {
+    padding: 10px;
+    display: none;
+}
+
+h4:hover span{
+    display: block;
+}
+
+@media (max-width: 1500px) {
+    .penguins {
+		max-width: 100%;
+		max-height: 100%;
+	}
 }
