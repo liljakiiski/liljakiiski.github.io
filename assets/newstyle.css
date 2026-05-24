@@ -209,6 +209,12 @@ CREDIT: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 /* PROJECT GRID STUFF 
 Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 */
+.projects-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .projects-container {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
@@ -318,7 +324,6 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	margin-top: 10px;
 	border-radius: 5px;
 }
-
 
 /* PENGUINS PAGE */
 
