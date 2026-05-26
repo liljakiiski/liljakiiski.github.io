@@ -14,36 +14,20 @@ function plusSlides(n, no) {
 }
 
 function showSlides(n, no) {
-  console.log('in');
-  console.log(n);
-  console.log(no);
-
   let i;
   let x = document.getElementsByClassName(slideId[no]);
 
-  console.log(slideId[no]);
-  console.log('xxx');
-  console.log(x);
-
-  console.log()
-
   if (n > x.length) {
-    console.log('ah')
     slideIndex[no] = 1
   }
 
-
   if (n < 1) {
-    console.log('uh');
     slideIndex[no] = x.length
   }
 
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-
-  console.log('slidex');
-  console.log(slideIndex[no]-1)
 
   x[slideIndex[no]-1].style.display = "block";
 }
