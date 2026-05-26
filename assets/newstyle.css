@@ -398,9 +398,7 @@ h4:hover span{
 .slideshow-container {
     margin: 20px 0px 20px 0px;
     
-    aspect-ratio: 1/1;
-    width: 50%;
-    height: 50vh;
+    width: 80%;
 
     background: blue;
     position: relative;

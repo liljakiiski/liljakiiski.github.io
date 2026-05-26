@@ -11,6 +11,10 @@ showSlides(1, 5);
 
 updateSizes();
 
+$(window).resize(function() {
+  updateSizes();
+});
+
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);
 }
