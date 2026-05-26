@@ -447,4 +447,5 @@ h4:hover span{
 .slideshow-container img {
     object-fit: contain;
     max-width: 100%;
+    vertical-align: middle;
 }

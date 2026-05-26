@@ -42,6 +42,7 @@ function showSlides(n, no) {
   Make height of div equal to height... by calculations!!
 */
 function updateSizes(){
+  console.log('running updateSizes');
   let x = document.getElementsByClassName("slideshow-container");
   let width = x[0].offsetWidth;
 
@@ -53,15 +54,8 @@ function updateSizes(){
   let y = document.getElementsByClassName("slide-img")
   console.log(y);
 
-  for (i = 0; i < x.length; i++) {
+  for (i = 0; i < y.length; i++) {
     y[i].style.height = width + "px";
 
   }
-
-  console.log(x[0].offsetWidth)
-
-  console.log(x[0].offsetHeight)
-
-
-
 }
