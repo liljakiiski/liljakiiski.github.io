@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Lilja Kiiski</title>
+		<link rel="stylesheet" type="text/css" href="assets/newstyle.css">
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"> 
+		<script src="https://kit.fontawesome.com/d4b1dbcaad.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+        <!-- HEADER / NAVBAR-->
+        <!-- HEADER / NAVBAR-->
+        <header class="header">
+            <div class="navbar">
+                <a href="penguins.html">🐧</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Portfolios
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="eng-portfolio.html">Engineering</a>
+                    <a href="soft-portfolio.html">Software</a>
+                    <a href="graphics-portfolio.html">Graphics</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+            </div>
+        </header>
+
+        <div class="one-page">
+            <div class="project-back-btn" onclick="openPage('eng-portfolio.html')">
+                <h3> < Back to Projects</h3>
+            </div>
+
+            <div class="project-in-depth-page">
+                <div class="project-in-depth-container">
+                    
+                    <h3 class="page-title">
+                        AprilTag Computer Vision System
+                    </h3>
+
+                    <br>
+
+                     <div class="project-images-big">
+                            <img src="assets/engineering-portfolio/robot_25.webp">
+                    </div>
+                
+                    <div class="project-tags">
+                        <span>Java</span>
+                        <span>Linux</span>
+                        <span>Raspberry Pi</span>
+                        <span>Electrical</span>
+                        <span>Computer Vision</span>
+                        <span>Robotics</span>
+                    </div>
+                    <br>
+
+                    <div class="project-design-process">
+                        <h4 class="proj-mini-heading">Overview</h4>
+
+                        <h5>
+                            I was in charge of programming a localization and alignment computer vision system for a competitive FRC robot.
+                            The main purpose of the system was to increase each robots cycle times (how fast it could retrieve cargo and score), by allowing the robot
+                            to auto-align to a scoring location, compared to needing to do so manually
+                        </h5>
+
+                        <br>
+
+                        <h4 class="proj-mini-heading">Research and Defining Objectives</h4>
+
+                        <h5>
+                            I, with my team, began by defining the system's goals and objectives, namely for the robot to be able to align with a 1”
+                            tolerance to each side of the scoring element. We also decided that defining a proper coordinate system / naming conventions early on would be important for the project,
+                            and thus I coordinated with our drive team to decide naming conventions for each side of the reef (the hexagon scoring location).
+                            
+                            <br><br>
+                            As for the software and hardware for the system, after spending some time on research I decided on using an Orange Pi 5 for our
+                            Coprocessor, a Microsoft Lifecam for our camera, and PhotonVision as the main library used.
+
+                        </h5>
+
+                        <br>
+
+                        <div class="project-images-very-big">
+                            <img src="assets/engineering-portfolio/frc4.png">
+                        </div>
+
+                        <br>
+
+                        <h6>(<a href="https://www.desmos.com/calculator/722e07733a">🔗 Desmos available here</a>),</h6>
+
+                        <br>
+                        
+                        <h4 class="proj-mini-heading">Software Development</h4>
+
+                        <h5>
+                            I split the computer vision system into two main components: localization and alignment. The localization component would be in charge
+                            of localizing the robot on the field based on available AprilTags, and the alignment system would use three PID controllers to align
+                            the robot to a desired distance and angle from the reef.
+                        </h5>
+
+                        <br>
+
+                        <h4 class="proj-mini-heading">Testing & Debugging</h4>
+
+                        <h5>
+                            As with the development of any software or robot, we ran into problems. To help with debugging and simulation we used AdvantageScope
+                            as a logging software.
+                        </h5>
+
+                        <br>
+
+                        <div class="project-images-big">
+                            <img src="assets/engineering-portfolio/frc1.png">
+                        </div>
+                        
+
+                        <h4 class="proj-mini-heading">Conclusions</h4>
+
+                        <h5>
+                            We found that whilst the robot was able to localize itself accurately on the field with our computer vision system, alignment was often inconsistent.
+                            We would need to recalibrate our camera and change buffer values depending on the side the robot was scoring on.
+
+                            <br><br>
+
+                            However, despite issues with physical alignment, our localization system was accurate inside tolerance, and alignment performed well in simulation. 
+                            Our robot was also able to place well in competition, and the cameras placed assisted our driver during matches.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/mainjs.js"></script>
+    </body>
+</html>

@@ -42,7 +42,6 @@ body {
     height: 100%;
 }
 
-
 /* INDIV PROJECT PAGES*/
 
 .project-in-depth-page {
@@ -77,9 +76,31 @@ body {
     width: 60%;
 }
 
+.project-images-very-big{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.project-images-very-big img {
+    width: 90%;
+}
+
 .proj-pdf {
     width: 80%;
     height: 90vh;
+}
+
+.project-back-btn h3 {
+    padding-left: 20px;
+}
+
+.project-back-btn:hover {
+    text-decoration: underline;
+    text-underline-offset: 8px
 }
 
 /* MAIN PAGE CONTAINER */
@@ -314,6 +335,11 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 }
 
 @media (max-width: 1500px) {
+    .project-in-depth-container {
+        width: 100%;
+        padding: 20px;
+    }
+    
     .projects-introduction {
         width: 100%;
         padding: 20px;
