@@ -42,6 +42,41 @@ body {
     height: 100%;
 }
 
+
+/* INDIV PROJECT PAGES*/
+
+.project-in-depth-page {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 20px 0px 20px;
+}
+
+.project-in-depth-container {
+    width: 50%;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.proj-mini-heading {
+    padding-top: 15px;
+}
+
+.project-images-big{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.project-images-big img {
+    width: 60%;
+}
+
 /* MAIN PAGE CONTAINER */
 
 .right-sidebar, .left-sidebar, .one-page {

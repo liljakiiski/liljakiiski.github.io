@@ -1,0 +1,120 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Lilja Kiiski</title>
+		<link rel="stylesheet" type="text/css" href="assets/newstyle.css">
+        <link rel="shortcut icon" type="image/png" href="assets/newstyle.css"> 
+		<script src="https://kit.fontawesome.com/d4b1dbcaad.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+        <!-- HEADER / NAVBAR-->
+        <!-- HEADER / NAVBAR-->
+        <header class="header">
+            <div class="navbar">
+                <a href="penguins.html">🐧</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Portfolios
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="eng-portfolio.html">Engineering</a>
+                    <a href="soft-portfolio.html">Software</a>
+                    <a href="graphics-portfolio.html">Graphics</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+            </div>
+        </header>
+
+        <div class="one-page">
+            <div class="project-in-depth-page">
+                <div class="project-in-depth-container">
+                    <h3 class="page-title">
+                        Honeycomb Game Console
+                    </h3>
+
+                    <br>
+
+                     <div class="project-images-big">
+                            <img src="assets/engineering-portfolio/honeycomb4.jpg">
+                        </div>
+
+                    <div class="project-design-process">
+                        <h4 class="proj-mini-heading">Overview</h4>
+
+                        <h5>
+                            As a video games enjoyer I thought it would be fun to design a miniature game console
+                            myself. I got to practice my CAD skills by custom designing the case, brush up on my Arduino abilities, 
+                            and have some fun programming a game for it.
+                        </h5>
+
+                        <h4 class="proj-mini-heading">Case Design</h4>
+
+                        <h5>
+                            I designed the case on Onshape,
+                            and went through a couple different design iterations, fixing sizing issues between prints. Overall I was going for a "streched honeybomb" look (essentially just a hexagon),
+                            and I'd say the final design accomplishes that well enough.
+                        </h5>
+
+                        <div class="project-images-big">
+                            <img src="assets/engineering-portfolio/honeycomb2.png">
+                        </div>
+                        
+                        <h6>(<a href="https://cad.onshape.com/documents/75788a0e02f4ddb276bfefda/w/d7f55b67527ee84b9442c995/e/64423de5c8b66e82c898bef6?renderMode=0&uiState=683e6ed2acba11596af01c39">🔗 CAD available here</a>),</h6>
+
+                        <br>
+                        
+                        <h4 class="proj-mini-heading">Software</h4>
+
+                        <h5>
+                            I decided to program a basic asteroid shooting game for the console, that takes an angle from the joystick and shoots a bullet at the click of 
+                            the button. Each asteroid would disappear upon impact, and the program would count the number of asteroids hit. I managed to get a high score of 83
+                            when testing it out.
+                        </h5>
+
+                        <h4 class="proj-mini-heading">Electronics / Wiring</h4>
+
+                        <h5>
+                            The wiring design was done using Fritzing. Note that the following diagram does not include the LCD display, but that’s essentially just attached on top of the Arduino (connects to all the back pins).
+                            Actually wiring up the case didn't take a long time, although fitting the wires neatly into the case took a few tries.
+                        </h5>
+
+                        <br>
+
+                        <div class="project-images-big">
+                            <img src="assets/engineering-portfolio/honeycomb3.jpg">
+                        </div>
+
+                        <div class="project-images-big">
+                            <img src="assets/engineering-portfolio/honeycomb1.png">
+                        </div>
+                    </div>
+
+                    <div class="project-materials">
+                        <h4 class="proj-mini-heading">Project Materials</h4>
+                        <br>
+                    
+                        <span>Bambu X1 Carbon (3D-Printer)</span> <br>
+                        <span>PLA filament</span> <br>
+                        <span>2-4 x M3*30 screws & nuts</span> <br>
+                        <span>4 x M3*8 screws & nuts</span> <br>
+                        <span>Double sided tape (tiny amount)</span> <br>
+                        
+                        <br>
+
+                        <span>Arduino Mega</span> <br>
+                        <span>Printer cable</span> <br>
+                        <span><a href="https://a.co/d/4Zz9W0s">HiLetgo 3.5" TFT LCD Display</a></span> <br>
+                        <span>Joystick</span> <br>
+                        <span>Limit switch (button)</span> <br>
+                        <span><a href="https://a.co/d/cwiMxKY">Arduino pin extenders/connectors</a></span> <br>
+                        <span>Assorted M-F and M-M wires</span> <br>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
