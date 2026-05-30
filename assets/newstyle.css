@@ -77,6 +77,11 @@ body {
     width: 60%;
 }
 
+.proj-pdf {
+    width: 80%;
+    height: 90vh;
+}
+
 /* MAIN PAGE CONTAINER */
 
 .right-sidebar, .left-sidebar, .one-page {
