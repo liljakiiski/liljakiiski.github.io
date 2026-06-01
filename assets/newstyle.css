@@ -54,11 +54,17 @@ Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
 }
 
 .skills-carousel {
-    width: 70%;
+    width: 80%;
     display: flex;
     padding-top: 20px;
     padding-bottom: 20px;
     overflow-x: auto;
+}
+
+@media (min-width:1200px) {
+    .skills-carousel {
+        width: 50%;
+    }
 }
 
 .skills-carousel::-webkit-scrollbar {
