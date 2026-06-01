@@ -42,6 +42,62 @@ body {
     height: 100%;
 }
 
+/* SKILLS CAROUSEL 
+Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
+*/
+.outer-skills-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.skills-carousel {
+    width: 70%;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow-x: auto;
+}
+
+.skills-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.skills-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+
+    animation: spin 25s infinite linear;
+    padding-right: 1em;
+}
+
+.skill {
+    height: 5em;
+    width: auto;
+    border-radius: .2em;
+    align-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.skill img {
+    height: 100%;
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
 /* INDIV PROJECT PAGES*/
 
 .project-in-depth-page {
