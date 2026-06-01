@@ -1,0 +1,114 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Lilja Kiiski</title>
+		<link rel="stylesheet" type="text/css" href="assets/newstyle.css">
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"> 
+		<script src="https://kit.fontawesome.com/d4b1dbcaad.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+        <!-- HEADER / NAVBAR-->
+        <header class="header">
+            <div class="navbar">
+                <a href="penguins.html">🐧</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Portfolios
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="eng-portfolio.html">Engineering</a>
+                    <a href="soft-portfolio.html">Software</a>
+                    <a href="graphics-portfolio.html">Graphics</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+            </div>
+        </header>
+
+        <div class="one-page">
+            <div class="project-back-btn" onclick="openPage('eng-portfolio.html')">
+                <h3> < Back to Projects</h3>
+            </div>
+
+            <div class="project-in-depth-page">
+                <div class="project-in-depth-container">
+                    
+                    <h3 class="page-title">
+                        Line Follower Robot
+                    </h3>
+
+                    <br>
+
+                     <div class="project-images-big">
+                            <img src="assets/engineering-portfolio/engr161-1.png">
+                    </div>
+                
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Linux</span>
+                        <span>Raspberry Pi</span>
+                        <span>Electrical</span>
+                        <span>Robotics</span>
+                        <span>LEGO</span>
+                    </div>
+                    <br>
+
+                    <div class="project-design-process">
+                        <h4 class="proj-mini-heading">Overview</h4>
+
+                        <h5>
+                            As the final project for ENGR161 we were tasked to create a LEGO robot to hold and deploy cargo whilst following a black line on a white terrain.
+                            My team came up with a solution using 2 grove hall line finder sensors, a color sensor, and an IMU, and was successfully able to follow the line
+                            to the finish and deploy cargo on detection of a magnet.
+                        </h5>
+
+                        <br>
+
+                        <h4 class="proj-mini-heading">Physical Design</h4>
+
+                        <h5>
+                            The robot uses a back-wheel drive with added gears for increased torque for the drivetrain, in order to be able to drive over hilly obstacles.
+                            The main frame and cargo systems stayed relatively similar throughout the process, with line sensors in the front of the robot, the pi in the
+                            center, and the battery at the front in order to balance out the cargo.
+                        </h5>
+
+                        <br>
+
+                        <div class="project-images-big">
+                            <img src="assets/engineering-portfolio/engr161-3.png">
+                        </div>
+                        
+                        <h4 class="proj-mini-heading">Software</h4>
+
+                        <h5>
+                            I used python alongside the Grove Hall sensors and libraries to write the code for the robot. The code integrated several different functions in one
+                            main loop, making it so that the robot would travel along the line, correcting its movement based on the feedback from a left, right, and color sensor,
+                            and drop the cargo on detection of a magnet via the IMU sensor.
+                        </h5>
+
+                        <br>
+
+                        <h4 class="proj-mini-heading">Conclusions</h4>
+
+                        <h5>
+                            In testing the robot had fluctuating performance, the sensors needed to constantly be re-tuned and new constants found to create smooth movement.
+                            
+                            However, the robot performed well in the final demonstration, able to perform multiple runs with separate checkpoints and deployed cargo with
+                            high accuracy (inside 1cm of the center). 
+                        </h5>
+
+                        <br>
+
+                        <div class="project-images-big">
+                            <img src="assets/engineering-portfolio/engr161-2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/mainjs.js"></script>
+    </body>
+</html>

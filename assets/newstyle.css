@@ -94,6 +94,11 @@ body {
     height: 90vh;
 }
 
+.proj-pdf-little {
+    width: 80%;
+    height: 50vh;
+}
+
 .project-back-btn h3 {
     padding-left: 20px;
 }

@@ -1,0 +1,97 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Lilja Kiiski</title>
+		<link rel="stylesheet" type="text/css" href="assets/newstyle.css">
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"> 
+		<script src="https://kit.fontawesome.com/d4b1dbcaad.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+        <!-- HEADER / NAVBAR-->
+        <header class="header">
+            <div class="navbar">
+                <a href="penguins.html">🐧</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Portfolios
+                    <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                    <a href="eng-portfolio.html">Engineering</a>
+                    <a href="soft-portfolio.html">Software</a>
+                    <a href="graphics-portfolio.html">Graphics</a>
+                    </div>
+                </div>
+                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+            </div>
+        </header>
+
+        <div class="one-page">
+            <div class="project-back-btn" onclick="openPage('eng-portfolio.html')">
+                <h3> < Back to Projects</h3>
+            </div>
+
+            <div class="project-in-depth-page">
+                <div class="project-in-depth-container">
+                    <h3 class="page-title">
+                        Maze Traversing Robot
+                    </h3>
+
+                    <br>
+
+                     <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/engr162-1.jpg">
+                    </div>
+
+                    <div class="project-tags">
+                        <span>Python</span>
+                        <span>Linux</span>
+                        <span>Raspberry Pi</span>
+                        <span>Electrical</span>
+                        <span>Robotics</span>
+                        <span>LEGO</span>
+                    </div>
+
+                    <br>
+
+                    <h4 class="proj-mini-heading">Overview</h4>
+
+                    <h5>
+                        As the final project for ENGR162 my team was tasked to create a LEGO robot to autonomously navigate a walled maze,
+                        while avoiding hazards (magnetic and IR beacons). My team created a robot using three ultrasonic sensors (at the 
+                        front, and left/right sides), alongside an IMU and IR sensor for hazard detection. I also worked on developing and
+                        fine-tuning a PID algorithm to optimize the robot’s turning and staying on course. I also worked on creating a custom cargo container with CAD.
+                    </h5>
+
+                    <br>
+
+                    <h4 class="proj-mini-heading">Project Technical Presentation</h4>
+
+                    <br>
+
+                    <embed class="proj-pdf-little" src="assets/engineering-portfolio/ENGR 162 Maze Traversing Robot Technical Presentation.pdf"/>
+
+                    <br><br>
+
+                    <h4 class="proj-mini-heading">Conclusions</h4>
+
+                    <h5>
+                        Ultimately, our robot managed to complete around 3/4ths of the maze, and was able to detect all obstacles. It accomplished most project objectives,
+                        and proved its functionality in driving, turning, cargo holding and deployment, and autonomous navigation.
+                    </h5>
+
+                    <br>
+
+                    <h5>
+                        However, the robot ultimately struggled with precise turning, and the main problem I found during the final demonstration was that of error
+                        accumulation over large distances. To improve, more fine precision in turning should be worked on.
+                    </h5>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="js/mainjs.js"></script>
+    </body>
+</html>
