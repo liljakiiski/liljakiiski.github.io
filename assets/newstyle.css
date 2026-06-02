@@ -42,6 +42,10 @@ body {
     height: 100%;
 }
 
+.smallerh2 {
+    font-size: calc(.5em + 3.2vh);
+}
+
 /* SKILLS CAROUSEL 
 Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
 */
