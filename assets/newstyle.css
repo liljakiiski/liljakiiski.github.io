@@ -20,13 +20,13 @@ h1 {font-size: clamp(5rem, 15vh, 6rem); }
 
 h2 {font-size: clamp(4rem, 10vw, 5rem); }
 
-h3 {font-size: calc(.5em + 2.2vh);; }
+h3 {font-size: calc(.5em + 2.2vh); }
 
-h4 {font-size: calc(.5em + 1.8vh);; }
+h4 {font-size: calc(.5em + 1.8vh); }
 
-h5 {font-size: calc(.5em + 1.2vh);; }
+h5 {font-size: calc(.5em + 1.2vh); }
 
-h6 {font-size: calc(.5em + 1vh);; }
+h6 {font-size: calc(.5em + 1vh); }
 
 span {font-size: 2vh; }
 
@@ -280,7 +280,7 @@ CREDIT: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 
 .navbar a {
     float: right;
-    font-size: 2em;
+    font-size: calc(.5em + 2.7vh);
     color: #022b3a;
     text-align: center;
     padding: 14px 16px;
@@ -293,7 +293,7 @@ CREDIT: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 }
 
 .dropdown .dropbtn {
-    font-size: 2em;
+    font-size: calc(.5em + 2.7vh);
     border: none;
     outline: none;
     color: #022b3a;
