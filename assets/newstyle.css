@@ -16,9 +16,9 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 	padding: 0;
 }
 
-h1 {font-size: clamp(5rem, 15vh, 6rem); }
+h1 {font-size: calc(.5em + 10.2vh); }
 
-h2 {font-size: clamp(4rem, 10vw, 5rem); }
+h2 {font-size: calc(.5em + 7.2vh); }
 
 h3 {font-size: calc(.5em + 2.2vh); }
 
@@ -261,7 +261,7 @@ Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
 
 	padding: 10px;
 	margin-left: 10px;
-	font-size: 3em;	
+	font-size: calc(.5em + 4.2vh);
 }
 
 .contact-item a {
