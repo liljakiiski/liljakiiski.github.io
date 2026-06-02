@@ -479,13 +479,6 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	justify-content: center;
 }
 
-.graphics-images img{
-	width: auto;
-	height: 250px;
-	/* border: 1px solid #000000;*/
-	background: #ffffff;
-}
-
 .project-images img {
 	width: auto;
 	height: 250px;
@@ -496,8 +489,14 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
     display: flex;
 }
 
-.solo-img {
-    height: 100%;
+.graphics-images img{
+	width: auto;
+	height: 250px;
+	/* border: 1px solid #000000;*/
+	background: #ffffff;
+}
+
+.otd-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -507,7 +506,16 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
     width: 100%;
 }
 
+.otd-img {
+    width: 80%;
+}
+
 .single-img img {
+    width: 100%;
+    height: auto;
+}
+
+.otd-img img {
     width: 100%;
     height: auto;
 }
