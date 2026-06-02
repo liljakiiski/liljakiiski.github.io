@@ -17,7 +17,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
 }
 
 
-h1 {font-size: clamp(5rem, calc(.5em + 10.2vh), 8rem); }
+h1 {font-size: clamp(5rem, calc(.5em + 10.2vh), 9rem); }
 
 h2 {font-size: clamp(4rem, calc(.5em + 7.2vh), 6rem); }
 
