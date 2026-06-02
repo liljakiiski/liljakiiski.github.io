@@ -351,7 +351,16 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
     width: 100%;
     height: auto;
     display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(25em, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+.graphics-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30em, 1fr));
 	gap: 20px;
 	padding: 20px;
 }
@@ -385,6 +394,10 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
     padding: 10px;
     font-style: italic;
     color: #707070;
+}
+
+.project-link {
+    padding-top: 10px;
 }
 
 .pre-projects-intro {
@@ -425,6 +438,18 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	transform: scale(1.02);
 }
 
+.graphics-card {
+	padding: 20px;
+	background-color: #ffffff;
+    border-radius: 2px;
+    border: 2px solid #000000;
+	text-align: center;
+}
+
+.graphics-card:hover {
+	transform: scale(1.02);
+}
+
 .project-timeframe {
     padding-top: 15px;
 }
@@ -446,7 +471,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
     box-shadow: -5px 5px 5px #b4b4b4;
 }
 
-.project-images, .graphics-images{
+.project-images {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 10px;
@@ -457,7 +482,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 .graphics-images img{
 	width: auto;
 	height: 250px;
-	border: 1px solid #000000;
+	/* border: 1px solid #000000;*/
 	background: #ffffff;
 }
 
@@ -467,8 +492,27 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	border-radius: 5px;
 }
 
+.graphics-images {
+    display: flex;
+}
+
+.solo-img {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-img {
+    width: 100%;
+}
+
+.single-img img {
+    width: 100%;
+    height: auto;
+}
+
 .project-overview {
-	background-color: #e9e9e9;
 	padding: 10px;
 	margin-top: 10px;
 	border-radius: 5px;
