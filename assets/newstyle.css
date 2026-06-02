@@ -55,6 +55,7 @@ Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
     justify-content: center;
     width: 100%;
     height: auto;
+    margin-bottom: 25px;
 }
 
 .skills-carousel {
@@ -419,7 +420,7 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0px 20px 0px 20px;
+    margin: 30px 20px 10px 20px;
 }
 
 .projects-introduction {
