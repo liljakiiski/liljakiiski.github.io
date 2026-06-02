@@ -334,6 +334,15 @@ CREDIT: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
     display: block;
 }
 
+hr {
+    width: 98%;
+    height: calc(.5em + 0.25vh);
+    color: #022b3a;
+    background: #022b3a;
+    font-size: 0;
+    border: 0;
+}
+
 .page-title{
     font-size: calc(.5em + 3.3vh);
 }
