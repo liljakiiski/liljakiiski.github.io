@@ -6,6 +6,8 @@
     --text-color: black;
     --subtitle-color: #707070;
     --box-shadow-color: #b4b4b4;
+    --nav-hover-color: #bfeeff;
+    --accent-color: red;
 }
 
 * {
@@ -15,7 +17,7 @@
 	-moz-box-sizing: border-box;
 }
 
-html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li {
+html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, button {
 	font-family: sans-serif;
   	font-weight: 400;
   	font-style: normal;
@@ -283,48 +285,133 @@ Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
 
 /* 
 NAVBAR 
-CREDIT: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+CREDIT: https://www.coding2go.com/ + https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 */
 
-.navbar {
-    padding-top: 10px;
-    padding-right: 20px;
-    overflow: hidden;
+nav{
+  background-color: var(--background-color);
+  border-bottom: 2px solid var(--heading-color);
 }
 
-.navbar a {
-    float: right;
-    font-size: calc(.5em + 2.7vh);
-    color: var(--heading-color);;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+nav ul{
+  list-style: none;
+  display: flex;
 }
 
-.dropdown {
-    float: right;
-    overflow: hidden;
+nav .home-li{
+  margin-right: auto;
+}
+
+nav li{
+  display: flex;
+}
+
+nav a{
+  display: flex;
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 1em 1em;
+  transition: background-color 150ms ease;
+}
+
+nav a, .dropdown .dropbtn {
+  font-size: calc(.9em + 1.2vh);
+  font-family: inherit;
 }
 
 .dropdown .dropbtn {
-    font-size: calc(.5em + 2.7vh);
+    background: none;
     border: none;
     outline: none;
-    color: var(--heading-color);;
-    padding: 14px 16px;
-    background-color: inherit;
-    font-family: inherit; 
     margin: 0;
+    cursor: pointer;
+    padding: 1em 1em;
+    display: flex;
+    align-items: center;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
-    text-decoration: underline;
+.dropdown .dropbtn i {
+  margin-left: 6px;
+  transition: transform 200ms ease;
+}
+
+.dropdown.open .dropbtn i {
+  transform: rotate(180deg);
+}
+
+nav a:hover{
+  background-color: var(--nav-hover-color);
+}
+
+nav a.active-link{
+  border-bottom: 2px solid var(--text-color);
+}
+
+nav a.accent-link{
+  background-color: var(--accent-color);
+}
+
+#open-sidebar-button{
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+#close-sidebar-button{
+  display: none;
+  background: none;
+  border: none;
+  padding: 1em;
+  cursor: pointer;
+}
+
+#overlay{
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  inset: 0;
+  z-index: 9;
+  display: none;
+}
+
+.skip-link {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  background-color: var(--accent-color); 
+  color: #ffffff; 
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.skip-link:focus {
+  opacity: 1; 
+  pointer-events: auto; 
+  outline: 3px solid #ffffff; 
+}
+
+.dropdown {
+    position: relative;
+    float: right;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: var(--nav-hover-color);
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--background-color);;
+    background-color: var(--background-color);
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -332,29 +419,95 @@ CREDIT: https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 
 .dropdown-content a {
     float: none;
-    color: black;
-    padding: 12px 16px;
+    padding: 0.5em 0.5em;
     text-decoration: none;
     display: block;
     text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: var(--background-color);;
+    background-color: var(--nav-hover-color);
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-hr {
-    width: 98%;
-    height: calc(.5em + 0.25vh);
-    color: var(--heading-color);;
-    background: var(--heading-color);;
-    font-size: 0;
-    border: 0;
+@media screen and (max-width: 700px) {
+  #open-sidebar-button, #close-sidebar-button{
+    display: block;
+  }
+
+  nav{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: min(15em, 100%);
+    z-index: 10;
+    border-left: 1px solid var(--nav-hover-color);
+    transition: right 300ms ease-in-out;
+  }
+
+  nav.show{
+    right: 0;
+  }
+
+  nav.show ~ #overlay{
+    display: block;
+  }
+
+  nav ul{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  nav a{
+    width: 100%;
+    padding-left: 2.5em;
+  }
+
+  nav a.active-link{
+    border-bottom: none;
+  }
+
+  nav .home-li{
+    margin-right: unset;
+  }
+
+  .dropdown {
+    float: none;
+    width: 100%;
+  }
+  
+  .dropdown .dropbtn {
+    width: 100%;
+    padding-left: 2.5em;
+    justify-content: flex-start;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .dropdown-content a {
+    padding-left: 3.5em;
+  }
+
+  .dropdown-content {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+  }
+
+  .dropdown.open .dropdown-content {
+    display: block;
+  }
 }
+
+/* OTHER */
 
 .page-title{
     font-size: calc(.5em + 3.3vh);
