@@ -2,6 +2,9 @@
 <html>
 	<head>
 		<title>Lilja Kiiski</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<link rel="stylesheet" type="text/css" href="assets/newstyle.css">
         <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"> 
 
@@ -9,8 +12,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-		<script src="https://kit.fontawesome.com/d4b1dbcaad.js" crossorigin="anonymous"></script>
-        <script src="navbar.js" defer></script>
+        <script src="js/navbar.js" defer></script>
+        <script src="https://kit.fontawesome.com/d4b1dbcaad.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
@@ -56,99 +59,67 @@
             <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
         </header>
 
-        <div class="one-page">
+        <main id="main-content">
 
-            <!-- INTRO TO PROJECTS BLOCK -->
-            <div class="pre-projects-intro">
-                <div class="projects-introduction">
-                    <h2 class="smallerh2">
-                        Hello hello,
-                    </h2>
+            <!-- INTRO / PROFILE BLOCK -->
+            <div class="about-hero">
+                <div class="about-hero-photo">
+                    <img src="assets/images/supertux.png">
+                </div>
 
-                    <h5> <br> </h5>
-
-                     <h3>
-                        I'm (still) Lilja
-                    </h3>
-
+                <div class="about-hero-text">
+                    <h2 class="smallerh2">Hello hello,</h2>
+                    <br>
+                    <h3>I'm (still) Lilja</h3>
                     <br>
 
-                    <h4>
-                        I'm an Electrical Engineering undergrad @Purdue University.
-                    </h4>
+                    <p class="about-role">Electrical Engineering Undergrad @ Purdue University</p>
 
-                    <br>
-
-                    <h4>
-                        I'm still exploring the various fields of EE, 
-                        but so far I'm been particularly drawn to system-on-chip design and robotics.
-                    </h4>
-
-                    <br><br>
-                    
-                    <h5>- - - - - - - - - -</h5>
-
-                    <br><br>
-
-                    <h4>I do a bunch of things in my free time. Currently, my main hobbies include: </h4>
-                    
-                    <br>
-                    
-                    <h4 class="hobby">
-                        🌍 Language Learning
-                        <br>
-                        <span>
-                            I’m a native English🇺🇲 and Finnish🇫🇮 speaker, 
-                            currently working on improving my Spanish🇪🇸, 
-                            and have also recently begun learning some Korean🇰🇷.
-                            <br>
-                            Feel free to reach out if you’re interested in 
-                            language exchange conversations!
-                        </span>
-                    </h4>
-
-                    <h4 class="hobby">
-                        ✏️ Art & 🧶 Crochet
-                        <br>
-                        <span>
-                            I create both physical and digital drawings, mainly consisting
-                            of artwork on some of my favorite characters from video games,
-                            movies, shows, etc..
-                        </span>
-                    </h4>
-
-                    <h4 class="hobby">
-                        🎲 Board Games
-                        <br>
-                        <span>
-                            I mainly play with my family and friends, 
-                            but you can also find me on <a href="https://boardgamearena.com/player?id=90515773">BGA</a>!
-                        </span>
-                    </h4>   
-
-                    <br><br>
-                    
-                    <h5>- - - - - - - - - -</h5>
-
-                    <br><br>
-
-                    <h3>
-                        About the Website
-                    </h3>
-
-                    <br>
-
-                    <h4>This website was made to showcase my portfolios (and for fun)</h4> <br>
-
-                    <h4>There's a secret penguin page you can find</h4>
-
-                    <h6>Hint: click the penguin in the navbar</h6>
-
-                    <br>
-
-                    <h4>As a challenge for myself, this website was made without the usage of any AI assistance</h4>
+                    <p>
+                        I'm still exploring the various fields of EE, but so far I've
+                        been particularly drawn to system-on-chip design and robotics.
+                    </p>
                 </div>
             </div>
-        </div>
+
+            <hr class="about-divider">
+
+            <!-- HOBBIES SECTION -->
+            <section class="about-section">
+                <h3 class="about-section-title">Outside of Engineering</h3>
+                <p class="about-section-intro">I do a bunch of things in my free time. Currently, my main hobbies include:</p>
+
+                <div class="hobby-grid">
+                    <div class="hobby-card">
+                        <h4>🌍 Language Learning</h4>
+                        <p>
+                            🇺🇲🇫🇮 + 🇪🇸🇰🇷
+                            <br>
+                            I'm a native English and Finnish speaker, currently working
+                            on improving my Spanish, and dabbling in some Korean.
+                        </p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <h4>✏️ Art & 🧶 Crochet</h4>
+                        <p>
+                            I create both physical and digital artworks, mainly consisting of
+                            drawings on favorite videogame/series characters. I enjoy crocheting 
+                            miscellaneous things as well!
+                        </p>
+                    </div>
+
+                    <div class="hobby-card">
+                        <h4>🎲 Board Games</h4>
+                        <p>
+                            I mainly play with my family and friends, but you can also find me
+                            on <a href="https://boardgamearena.com/player?id=90515773">BGA</a>!
+                            Some of my favorite games include 7 Wonders, Puerto Rico, and Carcassonne.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </main>
     </body>
 </html>
