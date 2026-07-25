@@ -803,24 +803,24 @@ main#main-content {
     border: none;
     border-top: 1px solid var(--box-shadow-color);
     max-width: 1100px;
-    margin: 10px auto;
+    margin: 30px auto;
 }
 
 .about-section {
     max-width: 1100px;
-    margin: 30px auto;
+    margin: 50px auto;
     padding: 0 20px;
     text-align: center;
 }
 
 .about-section-title {
     color: var(--heading-color);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .about-section-intro {
     color: var(--subtitle-color);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .hobby-grid {
@@ -862,6 +862,59 @@ main#main-content {
 .about-hint {
     color: var(--subtitle-color);
     font-style: italic;
+}
+
+/* RESUME DOWNLOAD BOX */
+
+.resume-box {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    padding: 6px 15px;
+    background-color: #9b9b9b;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 150ms ease, background-color 150ms ease;
+}
+
+.resume-box i {
+    font-size: 1em;
+    color: white;
+}
+
+.resume-box:hover {
+    background-color: #616161;
+    transform: scale(1.03);
+}
+
+/* SKILLS CATEGORIES (ABOUT PAGE) */
+
+.skills-category {
+    margin-bottom: 35px;
+}
+
+.skills-category:last-child {
+    margin-bottom: 0;
+}
+
+.skills-category-title {
+    color: var(--heading-color);
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.skills-category .project-tags {
+    justify-content: center;
+    gap: 5px;
+}
+
+.skills-category .project-tags span {
+    margin: 8px;
 }
 
 @media (max-width: 700px) {
