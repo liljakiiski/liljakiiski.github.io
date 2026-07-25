@@ -29,7 +29,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, button {
 
 h1 {font-size: clamp(3.5rem, 4vw + 6vh, 9.5rem); }
 
-h2 {font-size: clamp(3rem, calc(2vw + 4vh), 6rem); }
+h2 {font-size: clamp(2.5rem, 2vw + 3.5vh, 6rem); }
 
 h3 {font-size: calc(.5em + 2.2vh); }
 
