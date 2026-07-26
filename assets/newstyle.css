@@ -912,7 +912,7 @@ main#main-content {
 /* SKILLS CATEGORIES (ABOUT PAGE) */
 
 .skills-category {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
 }
 
 .skills-category:last-child {
@@ -921,7 +921,7 @@ main#main-content {
 
 .skills-category-title {
     color: var(--heading-color);
-    margin-bottom: 12px;
+    margin-top: 20px;
     text-align: center;
 }
 
