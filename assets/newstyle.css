@@ -1,12 +1,10 @@
-/* This website has been recreated without the usage of AI*/
-
 :root {
     --background-color: white;
     --heading-color: #022b3a;
     --text-color: black;
     --subtitle-color: #707070;
-    --box-shadow-color: #b4b4b4;
-    --nav-hover-color: #bfeeff;
+    --box-shadow-color: #cecece;
+    --nav-hover-color: #cbe3ff;
     --accent-color: red;
 }
 
@@ -57,8 +55,45 @@ body {
     font-size: calc(.5em + 3.2vh);
 }
 
-/* SKILLS CAROUSEL 
-Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
+/* 
+    PAGE TRANSITIONS
+*/
+@view-transition {
+    navigation: auto;
+}
+
+.header {
+    /* this stays in place */
+    view-transition-name: site-header;
+}
+
+::view-transition-old(root) {
+    animation: page-fade-out 180ms ease-out both;
+}
+ 
+::view-transition-new(root) {
+    animation: page-fade-in 220ms ease-out both;
+}
+ 
+@keyframes page-fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+ 
+@keyframes page-fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 
+    SKILLS CAROUSEL 
+    Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
 */
 .outer-skills-container {
     display: flex;
@@ -120,7 +155,9 @@ Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
     }
 }
 
-/* INDIV PROJECT PAGES*/
+/* 
+    INDIV PROJECT PAGES
+*/
 
 .project-in-depth-page {
     width: 100%;
@@ -186,7 +223,9 @@ Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
     text-underline-offset: 8px
 }
 
-/* MAIN PAGE CONTAINER */
+/* 
+    MAIN PAGE CONTAINER 
+*/
 
 .right-sidebar, .left-sidebar, .one-page {
     height: 50%;
@@ -222,7 +261,9 @@ Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
     }
 }
 
-/* WHY, HELLO*/
+/*
+    HELLO
+*/
 
 .helloblock {
     height: 100%;
@@ -258,7 +299,9 @@ Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
     color: var(--heading-color);
 }
 
-/* CONTACT */
+/* 
+    CONTACT 
+*/
 
 .contact-all-items {
 	display: flex;
@@ -284,8 +327,8 @@ Credits: https://www.youtube.com/watch?v=KD1Yo8a_Qis
 }
 
 /* 
-NAVBAR 
-CREDIT: https://www.coding2go.com/ + https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
+    NAVBAR 
+    CREDIT: https://www.coding2go.com/ + https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp
 */
 
 nav{
@@ -296,10 +339,11 @@ nav{
 nav ul{
   list-style: none;
   display: flex;
+  justify-content: flex-end;
 }
 
 nav .home-li{
-  margin-right: auto;
+  margin-right: 0;
 }
 
 nav li{
@@ -434,87 +478,90 @@ nav a.accent-link{
 }
 
 @media screen and (max-width: 700px) {
-  #open-sidebar-button, #close-sidebar-button{
-    display: block;
-  }
+    #open-sidebar-button, #close-sidebar-button{
+        display: block;
+    }
 
-  nav{
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    width: min(15em, 100%);
-    z-index: 10;
-    border-left: 1px solid var(--nav-hover-color);
-    transition: right 300ms ease-in-out;
-  }
+    nav{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: min(15em, 100%);
+        z-index: 10;
+        border-left: 1px solid var(--nav-hover-color);
+        transition: right 300ms ease-in-out;
+    }
 
-  nav.show{
-    right: 0;
-  }
+    nav.show{
+        right: 0;
+    }
 
-  nav.show ~ #overlay{
-    display: block;
-  }
+    nav.show ~ #overlay{
+        display: block;
+    }
 
-  nav ul{
-    width: 100%;
-    flex-direction: column;
-  }
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+    }
 
-  nav a{
-    width: 100%;
-    padding-left: 2.5em;
-  }
+    nav a{
+        width: 100%;
+        padding-left: 2.5em;
+    }
 
-  nav a.active-link{
-    border-bottom: none;
-  }
+    nav a.active-link{
+        border-bottom: none;
+    }
 
-  nav .home-li{
-    margin-right: unset;
-  }
+    nav .home-li{
+        margin-right: unset;
+    }
 
-  .dropdown {
-    float: none;
-    width: 100%;
-  }
-  
-  .dropdown .dropbtn {
-    width: 100%;
-    padding-left: 2.5em;
-    justify-content: flex-start;
-  }
+    .dropdown {
+        float: none;
+        width: 100%;
+    }
 
-  .dropdown-content {
-    position: static;
-    width: 100%;
-    box-shadow: none;
-  }
+    .dropdown .dropbtn {
+        width: 100%;
+        padding-left: 2.5em;
+        justify-content: flex-start;
+    }
 
-  .dropdown-content a {
-    padding-left: 3.5em;
-  }
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
 
-  .dropdown-content {
-    position: static;
-    width: 100%;
-    box-shadow: none;
-  }
+    .dropdown-content a {
+        padding-left: 3.5em;
+    }
 
-  .dropdown.open .dropdown-content {
-    display: block;
-  }
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .dropdown.open .dropdown-content {
+        display: block;
+    }
 }
 
-/* OTHER */
+/* 
+    OTHER 
+*/
 
 .page-title{
     font-size: calc(.5em + 3.3vh);
 }
 
-/* PROJECT GRID STUFF 
-Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
+/* 
+    PROJECT GRID STUFF 
+    Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 */
 
 .projects {
@@ -717,7 +764,9 @@ Credits: https://youtu.be/3T0gjtXRNC0?si=m2yIFYsfb0kiGzGE
 	border-radius: 5px;
 }
 
-/* PENGUINS PAGE */
+/* 
+    PENGUINS PAGE 
+*/
 
 .penguins {
 	max-width: 50%;
@@ -759,8 +808,9 @@ h4:hover span{
 	}
 }
 
-/* ABOUT PAGE (redesigned) */
-
+/* 
+    ABOUT PAGE
+*/
 main#main-content {
     padding: 20px;
 }
@@ -881,7 +931,9 @@ main#main-content {
     font-style: italic;
 }
 
-/* RESUME DOWNLOAD BOX */
+/* 
+    RESUME DOWNLOAD BOX 
+*/
 
 .resume-box {
     display: inline-flex;
@@ -889,24 +941,23 @@ main#main-content {
     gap: 8px;
     margin-top: 10px;
     padding: 6px 15px;
-    background-color: #9b9b9b;
-    border: none;
+    border-color: var(--heading-color);
+    border: 1px solid;
     border-radius: 5px;
     text-decoration: none;
-    color: white;
-    font-weight: 700;
+    color: var(--heading-color);
     cursor: pointer;
     transition: transform 150ms ease, background-color 150ms ease;
+    box-shadow: -5px 5px 5px var(--box-shadow-color);
 }
 
 .resume-box i {
     font-size: 1em;
-    color: white;
+    color: var(--heading-color);
 }
 
 .resume-box:hover {
-    background-color: #616161;
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 /* SKILLS CATEGORIES (ABOUT PAGE) */
