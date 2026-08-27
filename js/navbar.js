@@ -21,6 +21,7 @@ function openSidebar(){
   navbar.classList.add('show')
   openButton.setAttribute('aria-expanded', 'true')
   navbar.removeAttribute('inert')
+  document.body.classList.add('nav-open')
 }
 
 function closeSidebar(){
@@ -28,6 +29,7 @@ function closeSidebar(){
   openButton.setAttribute('aria-expanded', 'false')
   navbar.setAttribute('inert', '')
   dropdown.classList.remove('open')
+  document.body.classList.remove('nav-open')
 }
 
 updateNavbar(media)
