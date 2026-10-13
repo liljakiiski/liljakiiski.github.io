@@ -33,7 +33,7 @@ html, body, div, h1, h2, h3, h4, h5, h6, p, a, img, ul, li, button {
 
 h1 {font-size: clamp(3.5rem, 4vw + 6vh, 9.5rem); }
 
-h2 {font-size: clamp(2.3rem, 1.6vw + 3.5vh, 6rem); }
+h2 {font-size: clamp(1.3rem, 0.8vw + 3vh, 6rem); }
 
 h3 {font-size: calc(.5em + 2.2vh); }
 
@@ -763,7 +763,7 @@ nav a.accent-link{
     text-align: left;
     text-decoration: none;
     color: var(--text-color);
-    box-shadow: -2px 2px 4px var(--box-shadow-color);
+    /*box-shadow: -2px 2px 4px var(--box-shadow-color);*/
     transition: box-shadow 150ms ease;
 }
 
@@ -1020,7 +1020,7 @@ main#main-content.site-page {
 }
 
 .about-role {
-    font-weight: 700;
+    font-weight: 200;
     color: var(--subtitle-color);
     margin-top: 5px;
     margin-bottom: 15px;
