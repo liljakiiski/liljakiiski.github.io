@@ -1,0 +1,170 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Lilja Kiiski</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="assets/newstyle.css">
+		<link rel="stylesheet" type="text/css" href="project-page.css">
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <script src="js/navbar.js" defer></script>
+        <script src="https://kit.fontawesome.com/d4b1dbcaad.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+        <!-- HEADER / NAVBAR-->
+        <header class="header">
+            <a href="#main-content" class="skip-link">Skip to main content</a>
+
+            <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#022b3a"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+            </button>
+
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#022b3a"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+                        </button>
+                    </li>
+
+                    <li class="home-li"><a href="index.html">Home</a></li>
+                    
+                    <li><a href="about.html">About</a></li>
+
+                    <li>
+                         <div class="dropdown">
+
+                            <button class="dropbtn">Portfolios
+                            <i class="fa fa-caret-down"></i>
+                            </button>
+
+                            <div class="dropdown-content">
+                                <a href="eng-portfolio.html">Engineering</a>
+                                <a href="soft-portfolio.html">Software</a>
+                                <a href="graphics-portfolio.html">Graphics</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="penguins.html">🐧</a></li>
+                </ul>
+            </nav>
+            
+            <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+        </header>
+
+        <main id="main-content" class="site-page">
+            <div class="project-back-btn">
+                <a href="eng-portfolio.html">&larr; Back to projects</a>
+            </div>
+
+            <div class="project-in-depth-page">
+                <article class="project-in-depth-container">
+                    <header>
+                        <h1 class="page-title">Haptic Sphere</h1>
+                        <p class="project-subtitle">CS Extended Reality (XR) Lab Research</p>
+
+                        <p class="project-lede">
+                            This is my current research project in Purdue's CS XR Lab, which works on haptic devices for VR.
+                            I'm building a tennis ball sized device that you hold in your hand and that can pull in different directions,
+                            to simulate things like the electric force between charged particles.
+                        </p>
+
+                        <div class="project-tags">
+                        <span>ESP32</span>
+                        <span>KiCad</span>
+                        <span>PCB Design</span>
+                        <span>C++</span>
+                        <span>Haptics</span>
+                        <span>Research</span>
+                        </div>
+                    </header>
+
+                    <!-- TODO: main photo -->
+                    <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/ball-pcb.png" alt="Haptic ball prototype">
+                    </div>
+
+                    <div class="lab-link">
+                        <a class="lab-link-logo" href="https://www.cs.purdue.edu/xrlab/">
+                            <img src="https://www.cs.purdue.edu/xrlab/assets/img/xr_lab_logo.png" alt="Purdue CS XR Lab logo">
+                        </a>
+                        <p>
+                            This project is part of the <a href="https://www.cs.purdue.edu/xrlab/">Purdue CS XR Lab</a>, a research group working on
+                            virtual, mixed, and augmented reality. One of the lab's projects is VR haptics, which is about letting people
+                            touch virtual objects, and this device is one of the haptic devices I'm building for it.
+                        </p>
+                    </div>
+
+                    <h2 class="proj-mini-heading">Research</h2>
+
+                    <p>
+                        I started by looking at different ways to make the force: voice coil actuators, linear resonant actuators, and solenoids.
+                        Voice coil actuators would feel the best, but they cost around $200 each and need special drivers.
+                        Solenoids are about 25x cheaper and can be driven with just a transistor, so I went with those for the first prototype.
+                    </p>
+
+                    <h2 class="proj-mini-heading">Prototype</h2>
+
+                    <p>
+                        The ball uses solenoids that hit the inside of the shell, with an ESP32 controlling them and an IMU to track which way the ball is facing.
+                        Each solenoid is switched by a TIP120 transistor with a flyback diode.
+                        I planned on three solenoids at first, but a push-pull solenoid only pushes in one direction (it springs back on its own),
+                        so covering both sides of each axis takes six.
+                    </p>
+
+                    <!-- TODO: photo/video of the breadboard solenoid test -->
+                    <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/ball-testing.png" alt="Solenoid test setup">
+                    </div>
+
+                    <h2 class="proj-mini-heading">Testing</h2>
+
+                    <p>
+                        On the bench, the solenoids switch on and off quickly, hit hard enough to be felt through the shell,
+                        and each draw about 1 A. Six of them at once is a lot of current for a battery at 5 V, so for now I'm powering everything from a bench supply.
+                    </p>
+
+                    <h2 class="proj-mini-heading">Custom PCB</h2>
+
+                    <p>
+                        The breadboard wiring took up way more space than a tennis ball has, so I designed a two layer PCB in KiCad.
+                        It has the six solenoid drivers, headers for the ESP32 and IMU, and screw terminals for the solenoids and power.
+                    </p>
+
+                    <p>
+                        This was a really good experience in PCB design (full schematic -> layout -> routing process). I learned a lot when
+                        making this, specifically with using nets in KiCad and using different-width routing depending on if I was working with power
+                        or just signals. I also learned a lot of helpful tools in KiCad such as using Global Flags.
+                    </p>
+
+                    <!-- TODO: schematic / PCB screenshot -->
+                    <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/ball-schematic.png" alt="Haptic ball schematic">
+                    </div>
+
+                    <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/ball-layout.png" alt="Haptic ball PCB">
+                    </div>
+
+                    <h2 class="proj-mini-heading">Next Steps</h2>
+
+                    <p>
+                        <!-- TODO: update with where you are now -->
+                        Next I want to test how fast the ESP32 can fire the solenoids, design a shell to fit everything inside,
+                        and get the whole thing running off a battery.
+                    </p>
+                </article>
+            </div>
+        </main>
+
+        <script src="js/mainjs.js"></script>
+    </body>
+</html>

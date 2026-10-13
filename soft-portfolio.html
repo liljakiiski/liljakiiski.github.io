@@ -35,7 +35,7 @@
 
                     <li class="home-li"><a href="index.html">Home</a></li>
                     
-                    <li><a href="about.html" aria-current="page" >About</a></li>
+                    <li><a href="about.html">About</a></li>
 
                     <li>
                          <div class="dropdown">
@@ -59,101 +59,75 @@
             <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
         </header>
 
-
-        <div class="one-page">
-            <!-- INTRO TO PROJECTS BLOCK -->
+        <main id="main-content" class="site-page">
+            <!-- INTRO -->
             <div class="pre-projects-intro">
                 <div class="projects-introduction">
-                    <h3 class="page-title">
-                        Software Portfolio 
-                    </h3>
-                    
-                    <br>
-
-                    <h4>
-                        All programs are available on my <a href="https://github.com/liljakiiski">GitHub</a>
-                    </h4>
+                    <h1 class="page-title">Software Portfolio</h1>
+                    <p class="projects-lede">All programs are available on my <a href="https://github.com/liljakiiski">GitHub</a></p>
                 </div>
             </div>
-
 
             <!-- SKILLS CAROUSEL -->
             <div class="outer-skills-container">
                 <div class="skills-carousel">
                     <div class="skills-group">
-                        <div class="skill"> <img src="assets/logos/java-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/python-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/c-logo.png"> </div>
-
-                        <div class="skill"> <img src="assets/logos/android-studio.webp"> </div>
-                        <div class="skill"> <img src="assets/logos/htmljsscs.Default"> </div>
-
-                        <div class="skill"> <img src="assets/logos/linux-logo.jpg"> </div>
-                        <div class="skill"> <img src="assets/logos/cpp-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/bash-logo.png"> </div>
+                        <div class="skill"><img src="assets/logos/java-logo.png" alt="Java"></div>
+                        <div class="skill"><img src="assets/logos/python-logo.png" alt="Python"></div>
+                        <div class="skill"><img src="assets/logos/c-logo.png" alt="C"></div>
+                        <div class="skill"><img src="assets/logos/android-studio.webp" alt="Android Studio"></div>
+                        <div class="skill"><img src="assets/logos/htmljsscs.Default" alt="HTML, CSS and JavaScript"></div>
+                        <div class="skill"><img src="assets/logos/linux-logo.jpg" alt="Linux"></div>
+                        <div class="skill"><img src="assets/logos/cpp-logo.png" alt="C++"></div>
+                        <div class="skill"><img src="assets/logos/bash-logo.png" alt="Bash"></div>
                     </div>
 
-                    <div aria-hidden class="skills-group">
-                        <div class="skill"> <img src="assets/logos/java-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/python-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/c-logo.png"> </div>
-
-                        <div class="skill"> <img src="assets/logos/android-studio.webp"> </div>
-                        <div class="skill"> <img src="assets/logos/htmljsscs.Default"> </div>
-
-                        <div class="skill"> <img src="assets/logos/linux-logo.jpg"> </div>
-                        <div class="skill"> <img src="assets/logos/cpp-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/bash-logo.png"> </div>
+                    <div class="skills-group" aria-hidden="true">
+                        <div class="skill"><img src="assets/logos/java-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/python-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/c-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/android-studio.webp" alt=""></div>
+                        <div class="skill"><img src="assets/logos/htmljsscs.Default" alt=""></div>
+                        <div class="skill"><img src="assets/logos/linux-logo.jpg" alt=""></div>
+                        <div class="skill"><img src="assets/logos/cpp-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/bash-logo.png" alt=""></div>
                     </div>
                 </div>
             </div>
-
 
             <!-- MAIN PROJECTS BLOCK -->
             <div class="projects">
                 <div class="projects-container">
                     <!-- Project -->
                     <div class="project-card">
-                        <h3 class="project-title pink">
-                            Schoology Classmates
-                        </h3>
+                        <h3 class="project-title">Schoology Classmates</h3>
 
-                        <h6 class="project-subtitle">
-                            Personal Project
-                        </h6>
+                        <h6 class="project-subtitle">Personal Project</h6>
 
                         <div class="project-images">
-                            <img src="assets/software-portfolio/schoology-classmates.png">
+                            <img src="assets/software-portfolio/schoology-classmates.png" alt="Screenshot of Schoology Classmates" loading="lazy">
                         </div>
 
-                        <h5 class="project-link">
-                            <a href="https://github.com/liljakiiski/schoology-classmates">🔗 GitHub</a>
-                        </h5>
+                        <p class="project-link"><a href="https://github.com/liljakiiski/schoology-classmates">🔗 GitHub</a></p>
 
                         <div class="project-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">Chrome-Extention</span>
+                            <span>JavaScript</span>
+                            <span>HTML/CSS</span>
+                            <span>Chrome-Extension</span>
                         </div>
                     </div>
 
                     <!-- Project -->
                     <div class="project-card">
-                        <h3 class="project-title green">
-                            PID Simulator
-                        </h3>
+                        <h3 class="project-title">PID Simulator</h3>
 
-                        <h6 class="project-subtitle">
-                            Personal Project
-                        </h6>
+                        <h6 class="project-subtitle">Personal Project</h6>
 
                         <div class="project-images">
-                            <img src="assets/software-portfolio/pid-sim.png">
+                            <img src="assets/software-portfolio/pid-sim.png" alt="Screenshot of PID Simulator" loading="lazy">
                         </div>
 
-                        <h5 class="project-link">
-                            <a href="https://github.com/liljakiiski/pid-sim">🔗 GitHub</a>
-                        </h5>
+                        <p class="project-link"><a href="https://github.com/liljakiiski/pid-sim">🔗 GitHub</a></p>
 
                         <div class="project-tags">
                             <span>Java</span>
@@ -163,21 +137,15 @@
 
                     <!-- Project -->
                     <div class="project-card">
-                        <h3 class="project-title yellow">
-                            The Arcade (Games Collection)
-                        </h3>
+                        <h3 class="project-title">The Arcade (Games Collection)</h3>
 
-                        <h6 class="project-subtitle">
-                            Personal Project
-                        </h6>
+                        <h6 class="project-subtitle">Personal Project</h6>
 
                         <div class="project-images">
-                            <img src="assets/software-portfolio/lilja-arcade.png">
+                            <img src="assets/software-portfolio/lilja-arcade.png" alt="Screenshot of The Arcade (Games Collection)" loading="lazy">
                         </div>
 
-                        <h5 class="project-link">
-                            <a href="https://github.com/liljakiiski/arcade-games">🔗 GitHub</a>
-                        </h5>
+                        <p class="project-link"><a href="https://github.com/liljakiiski/arcade-games">🔗 GitHub</a></p>
 
                         <div class="project-tags">
                             <span>Python</span>
@@ -189,21 +157,15 @@
 
                     <!-- Project -->
                     <div class="project-card">
-                        <h3 class="project-title blue">
-                            Wordle Helper
-                        </h3>
+                        <h3 class="project-title">Wordle Helper</h3>
 
-                        <h6 class="project-subtitle">
-                            Personal Project
-                        </h6>
+                        <h6 class="project-subtitle">Personal Project</h6>
 
                         <div class="project-images">
-                            <img src="assets/software-portfolio/wordle-helper.png">
+                            <img src="assets/software-portfolio/wordle-helper.png" alt="Screenshot of Wordle Helper" loading="lazy">
                         </div>
 
-                        <h5 class="project-link">
-                            <a href="https://github.com/liljakiiski/cpp-projects/tree/master/wordle-helper">🔗 GitHub</a>
-                        </h5>
+                        <p class="project-link"><a href="https://github.com/liljakiiski/cpp-projects/tree/master/wordle-helper">🔗 GitHub</a></p>
 
                         <div class="project-tags">
                             <span>C++</span>
@@ -212,21 +174,15 @@
 
                     <!-- Project -->
                     <div class="project-card">
-                        <h3 class="project-title pink">
-                            Multiplayer Gomoku
-                        </h3>
+                        <h3 class="project-title">Multiplayer Gomoku</h3>
 
-                        <h6 class="project-subtitle">
-                            Personal Project
-                        </h6>
+                        <h6 class="project-subtitle">Personal Project</h6>
 
                         <div class="project-images">
-                            <img src="assets/software-portfolio/gomoku.png">
+                            <img src="assets/software-portfolio/gomoku.png" alt="Screenshot of Multiplayer Gomoku" loading="lazy">
                         </div>
 
-                        <h5 class="project-link">
-                            <a href="https://github.com/liljakiiski/gomoku">🔗 GitHub</a>
-                        </h5>
+                        <p class="project-link"><a href="https://github.com/liljakiiski/gomoku">🔗 GitHub</a></p>
 
                         <div class="project-tags">
                             <span>Java</span>
@@ -237,21 +193,15 @@
 
                     <!-- Project -->
                     <div class="project-card">
-                        <h3 class="project-title green">
-                            My Path App
-                        </h3>
+                        <h3 class="project-title">My Path App</h3>
 
-                        <h6 class="project-subtitle">
-                            Technovation Girls Hackathon
-                        </h6>
-                        
+                        <h6 class="project-subtitle">Technovation Girls Hackathon</h6>
+
                         <div class="project-images">
-                            <img src="assets/software-portfolio/my-path.jpg">
+                            <img src="assets/software-portfolio/my-path.jpg" alt="Screenshot of My Path App" loading="lazy">
                         </div>
 
-                        <h5 class="project-link">
-                            <a href="https://github.com/liljakiiski/my-path">🔗 GitHub</a>
-                        </h5>
+                        <p class="project-link"><a href="https://github.com/liljakiiski/my-path">🔗 GitHub</a></p>
 
                         <div class="project-tags">
                             <span>Java</span>
@@ -260,7 +210,7 @@
                         </div>
                     </div>
                 </div>
-            </div>	
-        </div>
+            </div>
+        </main>
     </body>
 </html>

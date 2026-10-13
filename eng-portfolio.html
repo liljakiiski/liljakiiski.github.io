@@ -35,7 +35,7 @@
 
                     <li class="home-li"><a href="index.html">Home</a></li>
                     
-                    <li><a href="about.html" aria-current="page" >About</a></li>
+                    <li><a href="about.html">About</a></li>
 
                     <li>
                          <div class="dropdown">
@@ -59,232 +59,211 @@
             <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
         </header>
 
-        <div class="one-page">
+        <main id="main-content" class="site-page">
             <!-- INTRO TO PROJECTS BLOCK -->
             <div class="pre-projects-intro">
                 <div class="projects-introduction">
-                    <h3 class="page-title">
-                        Engineering Portfolio
-                    </h3>
-                    
-                    <br>
-
-                    <h4>
-                        Click on a project to learn more about it!
-                    </h4>
+                    <h1 class="page-title">Engineering Portfolio</h1>
+                    <p class="projects-lede">Click on a project to learn more about it!</p>
                 </div>
             </div>
 
             <!-- SKILLS CAROUSEL -->
+             <!--
             <div class="outer-skills-container">
                 <div class="skills-carousel">
                     <div class="skills-group">
-                        <div class="skill"> <img src="assets/logos/java-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/python-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/c-logo.png"> </div>
-
-                        <div class="skill"> <img src="assets/logos/linux-logo.jpg"> </div>
-                        <div class="skill"> <img src="assets/logos/cpp-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/raspberry-pi-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/bash-logo.png"> </div>
-
-                        <div class="skill"> <img src="assets/logos/onshape-logo.webp"> </div>
-
-                        <div class="skill"> <img src="assets/logos/systemverilog-logo.jpg"> </div>
-                        <div class="skill"> <img src="assets/logos/ltspice-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/arduino-logo.png"> </div>
-
-                        <div class="skill"> <img src="assets/logos/htmljsscs.Default"> </div>
+                        <div class="skill"><img src="assets/logos/java-logo.png" alt="Java"></div>
+                        <div class="skill"><img src="assets/logos/python-logo.png" alt="Python"></div>
+                        <div class="skill"><img src="assets/logos/c-logo.png" alt="C"></div>
+                        <div class="skill"><img src="assets/logos/linux-logo.jpg" alt="Linux"></div>
+                        <div class="skill"><img src="assets/logos/cpp-logo.png" alt="C++"></div>
+                        <div class="skill"><img src="assets/logos/raspberry-pi-logo.png" alt="Raspberry Pi"></div>
+                        <div class="skill"><img src="assets/logos/bash-logo.png" alt="Bash"></div>
+                        <div class="skill"><img src="assets/logos/onshape-logo.webp" alt="Onshape"></div>
+                        <div class="skill"><img src="assets/logos/systemverilog-logo.jpg" alt="SystemVerilog"></div>
+                        <div class="skill"><img src="assets/logos/ltspice-logo.png" alt="LTspice"></div>
+                        <div class="skill"><img src="assets/logos/arduino-logo.png" alt="Arduino"></div>
+                        <div class="skill"><img src="assets/logos/htmljsscs.Default" alt="HTML, CSS and JavaScript"></div>
                     </div>
 
-                    <div aria-hidden class="skills-group">
-                        <div class="skill"> <img src="assets/logos/java-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/python-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/c-logo.png"> </div>
-
-                        <div class="skill"> <img src="assets/logos/linux-logo.jpg"> </div>
-                        <div class="skill"> <img src="assets/logos/cpp-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/raspberry-pi-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/bash-logo.png"> </div>
-
-                        <div class="skill"> <img src="assets/logos/onshape-logo.webp"> </div>
-
-                        <div class="skill"> <img src="assets/logos/systemverilog-logo.jpg"> </div>
-                        <div class="skill"> <img src="assets/logos/ltspice-logo.png"> </div>
-                        <div class="skill"> <img src="assets/logos/arduino-logo.png"> </div>
-
-                        <div class="skill"> <img src="assets/logos/htmljsscs.Default"> </div>
+                    <div class="skills-group" aria-hidden="true">
+                        <div class="skill"><img src="assets/logos/java-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/python-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/c-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/linux-logo.jpg" alt=""></div>
+                        <div class="skill"><img src="assets/logos/cpp-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/raspberry-pi-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/bash-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/onshape-logo.webp" alt=""></div>
+                        <div class="skill"><img src="assets/logos/systemverilog-logo.jpg" alt=""></div>
+                        <div class="skill"><img src="assets/logos/ltspice-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/arduino-logo.png" alt=""></div>
+                        <div class="skill"><img src="assets/logos/htmljsscs.Default" alt=""></div>
                     </div>
                 </div>
             </div>
+            -->
 
             <!-- MAIN PROJECTS BLOCK -->
             <div class="projects">
                 <div class="projects-container">
-                    <!-- Project -->
-                    <div class="project-card" onclick="openPage('4bitcsa.html')">
-                        <h3 class="project-title pink">
-                            Physical 4-Bit Carry-Save Adder
-                        </h3>
+                <!-- Project -->
+                <a class="project-card" href="hapticsphere.html">
+                    <h3 class="project-title">XR/VR Haptic Sphere</h3>
 
-                        <h6 class="project-subtitle">
-                            Intro to SoCET
-                        </h6>
+                    <h6 class="project-subtitle">CS Extended Reality (XR) Lab Research</h6>
 
-                        <div class="project-images">
-                            <img src="assets/engineering-portfolio/csa3.jpg">
-                        </div>
-
-                        <div class="project-tags">
-                            <span class="tag">SystemVerilog</span>
-                            <span class="tag">Electrical</span>
-                            <span class="tag">Digital Circuits</span>
-                            <span class="tag">Breadboard</span>
-                        </div>
+                    <div class="project-images">
+                        <!-- TODO: replace with your image -->
+                        <img src="assets/engineering-portfolio/ball-pcb.png" alt="" loading="lazy">
                     </div>
 
-                    <!-- Project -->
-                    <div class="project-card"  onclick="openPage('mvrt25.html')">
-                        <h3 class="project-title purple">
-                            AprilTag Computer Vision System
-                        </h3>
+                    <div class="project-tags">
+                            <span>ESP32</span>
+                            <span>KiCad</span>
+                            <span>PCB Design</span>
+                            <span>Haptics</span>
+                            <span>Research</span>
+                    </div>
+                </a>
 
-                        <h6 class="project-subtitle">
-                            FIRST Robotics Competition - REEFSCAPE
-                        </h6>
+                <!-- Project -->
+                <a class="project-card" href="buckconverter.html">
+                    <h3 class="project-title">84V -> 19/12V Buck Converter Schematic</h3>
 
-                        <div class="project-images">
-                            <img src="assets/engineering-portfolio/robot_25.webp">
-                        </div>
+                    <h6 class="project-subtitle">Purdue IEEE Autonomous Motorsports</h6>
 
-                        <div class="project-tags">
+                    <div class="project-images">
+                        <!-- TODO: replace with your image -->
+                        <img src="assets/engineering-portfolio/buckconverter-schematic.png" alt="" loading="lazy">
+                    </div>
+
+                    <div class="project-tags">
+                            <span>KiCad</span>
+                            <span>LTspice</span>
+                            <span>TI WEBENCH</span>
+                            <span>Power Electronics</span>
+                            <span>Electrical</span>
+                    </div>
+                </a>
+
+                <!-- Project -->
+                <a class="project-card" href="4bitcsa.html">
+                    <h3 class="project-title">Physical 4-Bit Carry-Save Adder</h3>
+
+                    <h6 class="project-subtitle">Intro to SoCET</h6>
+
+                    <div class="project-images">
+                        <img src="assets/engineering-portfolio/csa3.jpg" alt="" loading="lazy">
+                    </div>
+
+                    <div class="project-tags">
+                            <span>SystemVerilog</span>
+                            <span>Electrical</span>
+                            <span>Digital Circuits</span>
+                            <span>Breadboard</span>
+                    </div>
+                </a>
+
+                <!-- Project -->
+                <a class="project-card" href="mvrt25.html">
+                    <h3 class="project-title">AprilTag Computer Vision System</h3>
+
+                    <h6 class="project-subtitle">FIRST Robotics Competition - REEFSCAPE</h6>
+
+                    <div class="project-images">
+                        <img src="assets/engineering-portfolio/robot_25.webp" alt="" loading="lazy">
+                    </div>
+
+                    <div class="project-tags">
                             <span>Java</span>
                             <span>Linux</span>
                             <span>Raspberry Pi</span>
                             <span>Electrical</span>
                             <span>Computer Vision</span>
                             <span>Robotics</span>
-                        </div>
+                    </div>
+                </a>
+
+                <!-- Project -->
+                <a class="project-card" href="honeycomb.html">
+                    <h3 class="project-title">Honeycomb Game Console</h3>
+
+                    <h6 class="project-subtitle">Personal Project</h6>
+
+                    <div class="project-images">
+                        <img src="assets/engineering-portfolio/honeycomb4.jpg" alt="" loading="lazy">
                     </div>
 
-                    <!-- Project -->
-                    <div class="project-card" onclick="openPage('honeycomb.html')">
-                        <h3 class="project-title green">
-                            Honeycomb Game Console
-                        </h3>
-
-                        <h6 class="project-subtitle">
-                            Personal Project
-                        </h6>
-
-                        <div class="project-images">
-                            <img src="assets/engineering-portfolio/honeycomb4.jpg">
-                        </div>
-
-                        <div class="project-tags">
+                    <div class="project-tags">
                             <span>C++</span>
                             <span>Arduino</span>
                             <span>CAD</span>
                             <span>Electrical</span>
-                        </div>
+                    </div>
+                </a>
+
+                <!-- Project -->
+                <a class="project-card" href="engr161.html">
+                    <h3 class="project-title">Line Follower Robot</h3>
+
+                    <h6 class="project-subtitle">ENGR161</h6>
+
+                    <div class="project-images">
+                        <img src="assets/engineering-portfolio/engr161-1.png" alt="" loading="lazy">
                     </div>
 
-                    <!-- Project -->
-                    <div class="project-card" onclick="openPage('engr161.html')">
-                        <h3 class="project-title yellow">
-                            Line Follower Robot
-                        </h3>
-
-                        <h6 class="project-subtitle">
-                            ENGR161
-                        </h6>
-
-                        <div class="project-images">
-                            <img src="assets/engineering-portfolio/engr161-1.png">
-                        </div>
-
-                        <div class="project-tags">
+                    <div class="project-tags">
                             <span>Python</span>
                             <span>Linux</span>
                             <span>Raspberry Pi</span>
                             <span>Electrical</span>
                             <span>Robotics</span>
                             <span>LEGO</span>
-                        </div>
+                    </div>
+                </a>
+
+                <!-- Project -->
+                <a class="project-card" href="engr162.html">
+                    <h3 class="project-title">Maze Traversing Robot</h3>
+
+                    <h6 class="project-subtitle">ENGR162</h6>
+
+                    <div class="project-images">
+                        <img src="assets/engineering-portfolio/engr162-1.jpg" alt="" loading="lazy">
                     </div>
 
-                    <!-- Project -->
-                    <div class="project-card" onclick="openPage('engr162.html')">
-                        <h3 class="project-title green">
-                            Maze Traversing Robot
-                        </h3>
-
-                        <h6 class="project-subtitle">
-                            ENGR162
-                        </h6>
-
-                        <div class="project-images">
-                            <img src="assets/engineering-portfolio/engr162-1.jpg">
-                        </div>
-
-                        <div class="project-tags">
+                    <div class="project-tags">
                             <span>Python</span>
                             <span>Linux</span>
                             <span>Raspberry Pi</span>
                             <span>Electrical</span>
                             <span>Robotics</span>
                             <span>LEGO</span>
-                        </div>
+                    </div>
+                </a>
+
+                <!-- Project -->
+                <a class="project-card" href="irarduinocar.html">
+                    <h3 class="project-title">IR Remote Controlled Car</h3>
+
+                    <h6 class="project-subtitle">Personal Project</h6>
+
+                    <div class="project-images">
+                        <img src="assets/engineering-portfolio/mini-robot-1.jpg" alt="" loading="lazy">
                     </div>
 
-                    <!-- Project -->
-                    <div class="project-card" onclick="openPage('irarduinocar.html')">
-                        <h3 class="project-title blue">
-                            IR Remote Controlled Car
-                        </h3>
-
-                        <h6 class="project-subtitle">
-                            Personal Project
-                        </h6>
-
-                        <div class="project-images">
-                            <img src="assets/engineering-portfolio/mini-robot-1.jpg">
-                        </div>
-
-                        <div class="project-tags">
+                    <div class="project-tags">
                             <span>C++</span>
                             <span>Arduino</span>
                             <span>Robotics</span>
                             <span>Electrical</span>
-                        </div>
                     </div>
-
-                    <!-- Project -->
-                    <!--
-                    <div class="project-card">
-                        <h3 class="project-title purple">
-                            Autonomous Swerve Drive
-                        </h3>
-
-                        <h5 class="project-subtitle">
-                            FIRST Robotics Competition - CRESCENDO
-                        </h5>
-
-                        <div class="project-images">
-                            <img src="assets/engineering-portfolio/robot_24.png">
-                        </div>
-
-                        <div class="project-tags">
-                            <span>Java</span>
-                            <span>Robotics</span>
-                            <span>Swerve Drive</span>
-                            <span>Motion Planning</span>
-                        </div>
-                    </div>
-                    -->
+                </a>
                 </div>
-            </div>	
-        </div>
+            </div>
+        </main>
 
         <script src="js/mainjs.js"></script>
     </body>

@@ -35,7 +35,7 @@
 
                     <li class="home-li"><a href="index.html">Home</a></li>
                     
-                    <li><a href="about.html" aria-current="page" >About</a></li>
+                    <li><a href="about.html">About</a></li>
 
                     <li>
                          <div class="dropdown">
@@ -59,70 +59,60 @@
             <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
         </header>
 
-        <div class="one-page">
-            <div class="project-back-btn" onclick="openPage('eng-portfolio.html')">
-                <h3> <br> < Back to Projects</h3>
+        <main id="main-content" class="site-page">
+            <div class="project-back-btn">
+                <a href="eng-portfolio.html">&larr; Back to projects</a>
             </div>
 
             <div class="project-in-depth-page">
-                <div class="project-in-depth-container">
-                    <h3 class="page-title">
-                        Maze Traversing Robot
-                    </h3>
+                <article class="project-in-depth-container">
+                    <header>
+                        <h1 class="page-title">Maze Traversing Robot</h1>
+                        <p class="project-subtitle">ENGR162</p>
 
-                    <br>
+                        <p class="project-lede">
+                            As the final project for ENGR162 my team was tasked to create a LEGO robot to autonomously
+                            navigate a walled maze, while avoiding hazards (magnetic and IR beacons). My team created a
+                            robot using three ultrasonic sensors (at the front, and left/right sides), alongside an IMU
+                            and IR sensor for hazard detection. I also worked on developing and fine-tuning a PID
+                            algorithm to optimize the robot’s turning and staying on course. I also worked on creating a
+                            custom cargo container with CAD.
+                        </p>
 
-                     <div class="project-images-big">
-                        <img src="assets/engineering-portfolio/engr162-1.jpg">
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Linux</span>
+                            <span>Raspberry Pi</span>
+                            <span>Electrical</span>
+                            <span>Robotics</span>
+                            <span>LEGO</span>
+                        </div>
+                    </header>
+
+                    <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/engr162-1.jpg" alt="Maze Traversing Robot">
                     </div>
 
-                    <div class="project-tags">
-                        <span>Python</span>
-                        <span>Linux</span>
-                        <span>Raspberry Pi</span>
-                        <span>Electrical</span>
-                        <span>Robotics</span>
-                        <span>LEGO</span>
-                    </div>
+                    <h2 class="proj-mini-heading">Project Technical Presentation</h2>
 
-                    <br>
+                    <embed class="proj-pdf-little" src="assets/engineering-portfolio/ENGR 162 Maze Traversing Robot Technical Presentation.pdf" type="application/pdf">
 
-                    <h4 class="proj-mini-heading">Overview</h4>
+                    <h2 class="proj-mini-heading">Conclusions</h2>
 
-                    <h5>
-                        As the final project for ENGR162 my team was tasked to create a LEGO robot to autonomously navigate a walled maze,
-                        while avoiding hazards (magnetic and IR beacons). My team created a robot using three ultrasonic sensors (at the 
-                        front, and left/right sides), alongside an IMU and IR sensor for hazard detection. I also worked on developing and
-                        fine-tuning a PID algorithm to optimize the robot’s turning and staying on course. I also worked on creating a custom cargo container with CAD.
-                    </h5>
+                    <p>
+                        Ultimately, our robot managed to complete around 3/4ths of the maze, and was able to detect all
+                        obstacles. It accomplished most project objectives, and proved its functionality in driving,
+                        turning, cargo holding and deployment, and autonomous navigation.
+                    </p>
 
-                    <br>
-
-                    <h4 class="proj-mini-heading">Project Technical Presentation</h4>
-
-                    <br>
-
-                    <embed class="proj-pdf-little" src="assets/engineering-portfolio/ENGR 162 Maze Traversing Robot Technical Presentation.pdf"/>
-
-                    <br><br>
-
-                    <h4 class="proj-mini-heading">Conclusions</h4>
-
-                    <h5>
-                        Ultimately, our robot managed to complete around 3/4ths of the maze, and was able to detect all obstacles. It accomplished most project objectives,
-                        and proved its functionality in driving, turning, cargo holding and deployment, and autonomous navigation.
-                    </h5>
-
-                    <br>
-
-                    <h5>
-                        However, the robot ultimately struggled with precise turning, and the main problem I found during the final demonstration was that of error
-                        accumulation over large distances. To improve, more fine precision in turning should be worked on.
-                    </h5>
-
-                </div>
+                    <p>
+                        However, the robot ultimately struggled with precise turning, and the main problem I found
+                        during the final demonstration was that of error accumulation over large distances. To improve,
+                        more fine precision in turning should be worked on.
+                    </p>
+                </article>
             </div>
-        </div>
+        </main>
 
         <script src="js/mainjs.js"></script>
     </body>

@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html>
+	<head>
+		<title>Lilja Kiiski</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" type="text/css" href="assets/newstyle.css">
+		<link rel="stylesheet" type="text/css" href="project-page.css">
+        <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <script src="js/navbar.js" defer></script>
+        <script src="https://kit.fontawesome.com/d4b1dbcaad.js" crossorigin="anonymous"></script>
+	</head>
+
+	<body>
+        <!-- HEADER / NAVBAR-->
+        <header class="header">
+            <a href="#main-content" class="skip-link">Skip to main content</a>
+
+            <button id="open-sidebar-button" onclick="openSidebar()" aria-label="open sidebar" aria-expanded="false" aria-controls="navbar">
+                <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#022b3a"><path d="M165.13-254.62q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.86q7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.87q-7.22 7.12-17.9 7.12H165.13Zm0-200.25q-10.68 0-17.9-7.27-7.23-7.26-7.23-17.99 0-10.74 7.23-17.87 7.22-7.13 17.9-7.13h629.74q10.68 0 17.9 7.27 7.23 7.26 7.23 17.99 0 10.74-7.23 17.87-7.22 7.13-17.9 7.13H165.13Zm0-200.26q-10.68 0-17.9-7.26-7.23-7.26-7.23-18t7.23-17.87q7.22-7.12 17.9-7.12h629.74q10.68 0 17.9 7.26 7.23 7.26 7.23 18t-7.23 17.86q-7.22 7.13-17.9 7.13H165.13Z"/></svg>
+            </button>
+
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <button id="close-sidebar-button" onclick="closeSidebar()" aria-label="close sidebar">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#022b3a"><path d="m480-444.62-209.69 209.7q-7.23 7.23-17.5 7.42-10.27.19-17.89-7.42-7.61-7.62-7.61-17.7 0-10.07 7.61-17.69L444.62-480l-209.7-209.69q-7.23-7.23-7.42-17.5-.19-10.27 7.42-17.89 7.62-7.61 17.7-7.61 10.07 0 17.69 7.61L480-515.38l209.69-209.7q7.23-7.23 17.5-7.42 10.27-.19 17.89 7.42 7.61 7.62 7.61 17.7 0 10.07-7.61 17.69L515.38-480l209.7 209.69q7.23 7.23 7.42 17.5.19 10.27-7.42 17.89-7.62 7.61-17.7 7.61-10.07 0-17.69-7.61L480-444.62Z"/></svg>
+                        </button>
+                    </li>
+
+                    <li class="home-li"><a href="index.html">Home</a></li>
+                    
+                    <li><a href="about.html">About</a></li>
+
+                    <li>
+                         <div class="dropdown">
+
+                            <button class="dropbtn">Portfolios
+                            <i class="fa fa-caret-down"></i>
+                            </button>
+
+                            <div class="dropdown-content">
+                                <a href="eng-portfolio.html">Engineering</a>
+                                <a href="soft-portfolio.html">Software</a>
+                                <a href="graphics-portfolio.html">Graphics</a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li><a href="penguins.html">🐧</a></li>
+                </ul>
+            </nav>
+            
+            <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
+        </header>
+
+        <main id="main-content" class="site-page">
+            <div class="project-back-btn">
+                <a href="eng-portfolio.html">&larr; Back to projects</a>
+            </div>
+
+            <div class="project-in-depth-page">
+                <article class="project-in-depth-container">
+                    <header>
+                        <h1 class="page-title">84 V to 12 V Buck Converter</h1>
+                        <p class="project-subtitle">Purdue IEEE Autonomous Motorsports</p>
+
+                        <p class="project-lede">
+                            As part of Purdue IEEE Autonomous Motorsports, I designed the schematic for a DC-DC
+                            converter that steps the autonomous kart's battery voltage down to 12 V. That 12 V powers
+                            the kart's lidar system.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>KiCad</span>
+                            <span>LTspice</span>
+                            <span>Power Electronics</span>
+                            <span>Electrical</span>
+                        </div>
+                    </header>
+
+                    <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/buckconverter-schematic.png" alt="Buck converter schematic">
+                    </div>
+
+                    <h2 class="proj-mini-heading">Design</h2>
+
+                    <p>
+                        The main first step was thinking through the design as a whole (what this buck converter was
+                        going to be used for). My partners for this project helped implement a basic layout for the
+                        autonomous kart as a whole, and this specific component was needed to power the karts Lidar and
+                        Jetson.
+                    </p>
+
+                    <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/buckconverter-layout-whole.webp" alt="Basic layout of the autonomous kart" loading="lazy">
+                    </div>
+
+                    <p>
+                        After understanding the use for the PCB and the requirements for the systems it would be
+                        interacting with, I worked from the kart's power requirements and used TI's WEBENCH Power
+                        Designer to pick the components. TI Webench helped a lot, since I'd never touched power
+                        electronics before, and didn't know where to begin in terms of components to use, and what
+                        variables were important in it's design. The converter is built around the <a
+                        href="https://www.ti.com/lit/ds/symlink/lm5149-q1.pdf">LM5149-Q1</a> buck controller, and I drew
+                        the schematic in KiCad.
+                    </p>
+
+                    <h2 class="proj-mini-heading">Simulation</h2>
+
+                    <p>
+                        With help from my mentor, I simulated core converter components in LTspice to check that it
+                        worked. This was mainly to confirm that some of the smaller circuitry (such as with the MOSFETS)
+                        was functional.
+                    </p>
+                </article>
+            </div>
+        </main>
+
+        <script src="js/mainjs.js"></script>
+    </body>
+</html>

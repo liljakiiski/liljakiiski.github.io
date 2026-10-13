@@ -35,7 +35,7 @@
 
                     <li class="home-li"><a href="index.html">Home</a></li>
                     
-                    <li><a href="about.html" aria-current="page" >About</a></li>
+                    <li><a href="about.html">About</a></li>
 
                     <li>
                          <div class="dropdown">
@@ -59,51 +59,41 @@
             <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
         </header>
 
-        <div class="one-page">
-            <div class="project-back-btn" onclick="openPage('eng-portfolio.html')">
-                <h3> <br> < Back to Projects</h3>
+        <main id="main-content" class="site-page">
+            <div class="project-back-btn">
+                <a href="eng-portfolio.html">&larr; Back to projects</a>
             </div>
 
             <div class="project-in-depth-page">
-                <div class="project-in-depth-container">
-                    <h3 class="page-title">
-                        4-Bit Carry Save Adder
-                    </h3>
+                <article class="project-in-depth-container">
+                    <header>
+                        <h1 class="page-title">4-Bit Carry Save Adder</h1>
+                        <p class="project-subtitle">Intro to SoCET</p>
 
-                    <br>
+                        <p class="project-lede">
+                            As a final project for my Intro to SoCET class, my team decided to make a 4-bit Carry Save
+                            Adder (CSA). A CSA is a digital circuit that computes the sum of (in this case: three) or
+                            more binary numbers by utilizing four full adders.
+                        </p>
 
-                     <div class="project-images-big">
-                        <img src="assets/engineering-portfolio/csa3.jpg">
+                        <div class="project-tags">
+                            <span>SystemVerilog</span>
+                            <span>Electrical</span>
+                            <span>Digital Circuits</span>
+                            <span>Breadboard</span>
+                        </div>
+                    </header>
+
+                    <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/csa3.jpg" alt="4-Bit Carry Save Adder">
                     </div>
 
-                    <div class="project-tags">
-                        <span class="tag">SystemVerilog</span>
-                        <span class="tag">Electrical</span>
-                        <span class="tag">Digital Circuits</span>
-                        <span class="tag">Breadboard</span>
-                    </div>
+                    <h2 class="proj-mini-heading">Project Report</h2>
 
-                    <br>
-
-                    <h4 class="proj-mini-heading">Overview</h4>
-
-                    <h5>
-                        As a final project for my Intro to SoCET class, my team decided to make a 4-bit Carry Save Adder (CSA).
-                        A CSA is a digital circuit that computes the sum of (in this case: three) or more binary numbers
-                        by utilizing four full adders.
-                    </h5>
-
-                    <br>
-                    <br>
-
-                    <h4 class="proj-mini-heading">Project Report</h4>
-
-                    <br>
-
-                    <embed class="proj-pdf" src="assets/engineering-portfolio/4-Bit Physical Carry Save Adder Report.pdf"/>
-                </div>
+                    <embed class="proj-pdf" src="assets/engineering-portfolio/4-Bit Physical Carry Save Adder Report.pdf" type="application/pdf">
+                </article>
             </div>
-        </div>
+        </main>
 
         <script src="js/mainjs.js"></script>
     </body>

@@ -35,7 +35,7 @@
 
                     <li class="home-li"><a href="index.html">Home</a></li>
                     
-                    <li><a href="about.html" aria-current="page" >About</a></li>
+                    <li><a href="about.html">About</a></li>
 
                     <li>
                          <div class="dropdown">
@@ -59,46 +59,40 @@
             <div id="overlay" onclick="closeSidebar()" aria-hidden="true"></div>
         </header>
 
-
-        <div class="one-page">
-            <div class="project-back-btn" onclick="openPage('eng-portfolio.html')">
-                <h3> <br> < Back to Projects</h3>
+        <main id="main-content" class="site-page">
+            <div class="project-back-btn">
+                <a href="eng-portfolio.html">&larr; Back to projects</a>
             </div>
 
             <div class="project-in-depth-page">
-                <div class="project-in-depth-container">
-                    
-                    <h3 class="page-title">
-                        IR Remote Controlled Car
-                    </h3>
+                <article class="project-in-depth-container">
+                    <header>
+                        <h1 class="page-title">IR Remote Controlled Car</h1>
+                        <p class="project-subtitle">Personal Project</p>
 
-                    <br>
+                        <p class="project-lede">
+                            I programmed a custom Arduino-based driving system for a miniature robot car, to drive
+                            left/right/forwards/backwards based on input from an IR transmitter. I also implemented PID
+                            control to smoothen the robot’s driving. The project used an Arduino MEGA, a DC motor
+                            controller, and IR receiver and transmitter, and assorted wires.
+                        </p>
 
-                     <div class="project-images-big">
-                            <img src="assets/engineering-portfolio/mini-robot-1.jpg">
+                        <div class="project-tags">
+                            <span>C++</span>
+                            <span>Arduino</span>
+                            <span>Robotics</span>
+                            <span>Electrical</span>
+                        </div>
+                    </header>
+
+                    <div class="project-images-big">
+                        <img src="assets/engineering-portfolio/mini-robot-1.jpg" alt="IR Remote Controlled Car">
                     </div>
-                
-                    <div class="project-tags">
-                        <span>C++</span>
-                        <span>Arduino</span>
-                        <span>Robotics</span>
-                        <span>Electrical</span>
-                    </div>
-                    
-                    <br>
 
-                    <div class="project-design-process">
-                        <h4 class="proj-mini-heading">Overview</h4>
 
-                        <h5>
-                            I programmed a custom Arduino-based driving system for a miniature robot car, to drive left/right/forwards/backwards
-                            based on input from an IR transmitter. I also implemented PID control to smoothen the robot’s driving. The project
-                            used an Arduino MEGA, a DC motor controller, and IR receiver and transmitter, and assorted wires.
-                        </h5>
-                    </div>
-                </div>
+                </article>
             </div>
-        </div>
+        </main>
 
         <script src="js/mainjs.js"></script>
     </body>
